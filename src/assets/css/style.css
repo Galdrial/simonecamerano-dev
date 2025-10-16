@@ -12295,6 +12295,25 @@ footer ul li {
   padding: 0rem 0.5rem 0.2rem 0.5rem !important;
 }
 
+@media (min-width: 992px) {
+  footer {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 1rem;
+  }
+  footer span {
+    white-space: nowrap;
+    text-align: left;
+    padding-top: 0;
+  }
+  footer ul {
+    padding-top: 0;
+    flex-wrap: nowrap !important;
+    justify-content: flex-end !important;
+  }
+}
 main {
   flex-direction: column !important;
   flex-wrap: wrap !important;

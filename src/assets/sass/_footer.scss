@@ -52,3 +52,24 @@ footer {
     }
   }
 }
+
+// Desktop: allineamento orizzontale copy e icone
+@media (min-width: 992px) {
+  footer {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 1rem;
+    span {
+      white-space: nowrap;
+      text-align: left;
+      padding-top: 0;
+    }
+    ul {
+      padding-top: 0;
+      flex-wrap: nowrap !important;
+      justify-content: flex-end !important;
+    }
+  }
+}
