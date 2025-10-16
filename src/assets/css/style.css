@@ -12054,26 +12054,25 @@ main {
   color: #1c1e21 !important;
 }
 
-@media screen and (max-width: 991px) {
-  main {
-    text-align: center;
-  }
-  main img, main .img-fluid {
-    margin-left: auto !important;
-    margin-right: auto !important;
-    display: block !important;
-  }
-  main [class*=col-] {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  main .buttons {
-    justify-content: center !important;
-  }
-  main button.btn {
-    margin-top: 1rem !important;
-  }
+main {
+  text-align: center;
 }
+main img, main .img-fluid {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+}
+main [class*=col-] {
+  margin-left: auto;
+  margin-right: auto;
+}
+main .buttons {
+  justify-content: center !important;
+}
+main button.btn {
+  margin-top: 1rem !important;
+}
+
 .navbar {
   height: 3rem;
   padding: 0;
@@ -12277,31 +12276,38 @@ footer ul li a i, footer ul li a i::before {
   color: #5663ee !important;
 }
 
-@media (max-width: 991px) {
-  footer {
-    flex-direction: column-reverse !important;
-    flex-wrap: wrap !important;
-    gap: 0rem;
-  }
-  footer span {
-    white-space: normal;
-    text-align: center;
-    padding-top: 0.4rem;
-  }
-  footer ul {
-    padding-top: 0.3rem;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-  }
-  footer ul li {
-    padding: 0rem 0.5rem 0.2rem 0.5rem !important;
-  }
+footer {
+  flex-direction: column-reverse !important;
+  flex-wrap: wrap !important;
+  gap: 0rem;
 }
-@media (max-width: 991px) {
-  main {
-    flex-direction: column !important;
-    flex-wrap: wrap !important;
-    gap: 0.5rem;
+footer span {
+  white-space: normal;
+  text-align: center;
+  padding-top: 0.4rem;
+}
+footer ul {
+  padding-top: 0.3rem;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+}
+footer ul li {
+  padding: 0rem 0.5rem 0.2rem 0.5rem !important;
+}
+
+main {
+  flex-direction: column !important;
+  flex-wrap: wrap !important;
+  gap: 0.5rem;
+}
+
+img.contact-img {
+  display: none !important;
+}
+
+@media (min-width: 992px) {
+  img.contact-img {
+    display: block !important;
   }
 }
 .contact-info {
@@ -12442,6 +12448,12 @@ footer ul li a i, footer ul li a i::before {
     page-break-inside: avoid !important;
   }
 }
+main {
+  flex-direction: column !important;
+  flex-wrap: wrap !important;
+  gap: 0.5rem;
+}
+
 @media (min-width: 991px) {
   .card {
     max-width: 70%;

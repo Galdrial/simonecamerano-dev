@@ -196,3 +196,10 @@
     }
   }
 }
+
+// Mobile first: regole di default per mobile
+main {
+  flex-direction: column !important;
+  flex-wrap: wrap !important;
+  gap: 0.5rem;
+}

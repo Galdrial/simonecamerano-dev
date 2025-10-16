@@ -33,26 +33,22 @@ footer {
   }
 }
 
-// Passa a layout verticale quando c'è poco spazio
-@media (max-width: 991px) {
-  footer {
-    flex-direction: column-reverse !important;
-    flex-wrap: wrap !important;
-    gap: 0rem;
-    
-    span {
-      white-space: normal; // Permette wrapping del testo
-      text-align: center;
-      padding-top: 0.4rem;
-    }
-    
-    ul {
-      padding-top: 0.3rem;
-      flex-wrap: wrap !important; // Permette wrapping icone se necessario
-      justify-content: center !important;
-      li {
+// Mobile first: regole di default per mobile
+footer {
+  flex-direction: column-reverse !important;
+  flex-wrap: wrap !important;
+  gap: 0rem;
+  span {
+    white-space: normal; // Permette wrapping del testo
+    text-align: center;
+    padding-top: 0.4rem;
+  }
+  ul {
+    padding-top: 0.3rem;
+    flex-wrap: wrap !important; // Permette wrapping icone se necessario
+    justify-content: center !important;
+    li {
       padding:0rem 0.5rem 0.2rem 0.5rem !important;
-    }
     }
   }
 }

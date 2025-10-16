@@ -82,29 +82,25 @@ main {
   color: $body-color !important; // Colore del testo di default
 }
 
-@media screen and (max-width:991px) {
-  main {
-    text-align: center;
-    
-    // Centra l'immagine hero su mobile
-    img, .img-fluid {
-      margin-left: auto !important;
-      margin-right: auto !important;
-      display: block !important;
-    }
-    
-    // Centra anche la colonna che contiene l'immagine
-    [class*="col-"] {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .buttons {
-      justify-content: center !important;
-    }
-    button.btn {
-      margin-top: 1rem !important;
-    }
+// Mobile first: regole di default per mobile
+main {
+  text-align: center;
+  // Centra l'immagine hero su mobile
+  img, .img-fluid {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+  }
+  // Centra anche la colonna che contiene l'immagine
+  [class*="col-"] {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .buttons {
+    justify-content: center !important;
+  }
+  button.btn {
+    margin-top: 1rem !important;
   }
 }
 
