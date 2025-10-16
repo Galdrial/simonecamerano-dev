@@ -1,0 +1,64 @@
+// ==========================================
+// VARIABILI BOOTSTRAP PERSONALIZZATE
+// ==========================================
+// Queste sovrascrivono i default di Bootstrap
+// DEVE essere importato PRIMA di Bootstrap
+
+// Colori brand
+/* $primary: #ff5733;
+$secondary: #6c757d;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+
+// Colori body
+$body-bg: #ffffff;
+$body-color: #212529; */
+
+// Colori brand
+$primary:   #5663ee;   // viola-azzurro ispirato a Discord — tech, vivace, moderno
+$secondary: #6c757d;   // neutro bilanciato (come Bootstrap)
+$success:   #2ecc71;   // verde brillante ma morbido
+$info:      #00bcd4;   // ciano moderno e pulito
+$warning:   #ffb400;   // giallo più caldo, meno saturo
+$danger:    #ff4b5c;   // rosso acceso ma non aggressivo
+
+// Colori body
+$body-bg:    #ffffff;
+$body-color: #1c1e21;
+
+
+
+// Typography
+$font-family-sans-serif: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+/* // Spacing
+$spacer: 1rem;
+
+// Navbar
+$navbar-padding-y: 1rem;
+$navbar-padding-x: 2rem;
+
+// Borders
+$border-radius: 0.375rem; */
+
+// Transitions
+$transition-base: all 0.3s ease;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+) !default;

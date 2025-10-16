@@ -1,0 +1,110 @@
+// ==========================================
+// CONFIGURAZIONE GENERALE DEL SITO
+// ==========================================
+// Questo file contiene gli stili globali e configurazioni
+// NON contiene variabili Bootstrap (quelle sono in _bootstrap-custom.scss)
+
+// ==========================================
+// LAYOUT GENERALE
+// ==========================================
+
+// Variabile per altezza navbar
+
+
+
+$navbar-height: 3rem;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto; // Permette lo scroll verticale
+  scroll-behavior: smooth;
+  scrollbar-width: none !important; // Firefox
+  -ms-overflow-style: none !important; // IE e Edge legacy
+
+  &::-webkit-scrollbar {
+    display: none !important; // Chrome, Safari, Opera
+    width: 0 !important;
+    height: 0 !important;
+  }
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto; // Permette lo scroll verticale
+  display: flex;
+  flex-direction: column;
+  /* padding: 2rem; */
+  
+  // Nascondi scrollbar anche su body per maggiore compatibilità
+  scrollbar-width: none !important; // Firefox
+  -ms-overflow-style: none !important; // IE e Edge legacy
+  
+  transition: background-color 0.3s ease, color 0.3s ease;
+  
+  &::-webkit-scrollbar {
+    display: none !important; // Chrome, Safari, Opera
+    width: 0 !important;
+    height: 0 !important;
+  }
+}
+
+main {
+  flex: 1; // Occupa automaticamente tutto lo spazio disponibile
+  
+  // Background elegante più visibile in light mode
+  background: 
+    radial-gradient(circle at top right, rgba(86, 99, 242, 0.25) 0%, transparent 50%),
+    radial-gradient(circle at bottom left, rgba(115, 54, 176, .20) 0%, transparent 50%),
+    #ffffff;
+  background-attachment: fixed; // Resta fisso, il contenuto scorre sopra
+  
+  // Centra il contenuto verticalmente
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy {
+  font-size: 0.7rem !important;
+  color: $body-color !important; // Colore del testo di default
+}
+
+@media screen and (max-width:991px) {
+  main {
+    text-align: center;
+    
+    // Centra l'immagine hero su mobile
+    img, .img-fluid {
+      margin-left: auto !important;
+      margin-right: auto !important;
+      display: block !important;
+    }
+    
+    // Centra anche la colonna che contiene l'immagine
+    [class*="col-"] {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .buttons {
+      justify-content: center !important;
+    }
+    button.btn {
+      margin-top: 1rem !important;
+    }
+  }
+}
+

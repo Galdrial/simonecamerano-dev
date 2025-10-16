@@ -1,0 +1,198 @@
+// ==========================================
+// CV PAGE STYLES
+// ==========================================
+// Stili minimi per la pagina CV
+// Layout basato su Bootstrap utilities
+// Nessuna animazione o transizione
+
+// Contact Info
+.contact-info {
+  font-size: 0.95rem;
+  
+  p {
+    display: flex;
+    align-items: center;
+  }
+  
+  i {
+    width: 20px;
+  }
+}
+
+// ==========================================
+// PRINT STYLES
+// ==========================================
+// Ottimizzazione per la stampa multipagina della pagina CV
+
+@media print {
+  // Rimuovi elementi non necessari per la stampa
+  header,
+  footer,
+  .navbar,
+  .btn,
+  button {
+    display: none !important;
+  }
+  
+  // Assicura che il main prenda tutta la pagina
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+    min-height: auto !important;
+    height: auto !important;
+  }
+  
+  // Container a larghezza piena
+  .container {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0.5cm !important;
+  }
+  
+  // Rimuovi ombre e bordi per stampa pulita
+  .shadow-lg {
+    box-shadow: none !important;
+    border: 1px solid #e5e7eb !important;
+  }
+  
+  .rounded-3 {
+    border-radius: 8px !important;
+  }
+  
+  // LE CARD INTERE (sezioni) devono restare unite quando possibile
+  .row.shadow-lg {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    margin-bottom: 0.4cm !important;
+  }
+  
+  // Se una card è troppo grande, permetti rottura ma solo tra i suoi contenuti interni
+  .col-lg-12 {
+    page-break-inside: auto !important;
+  }
+  
+  // Elementi che devono SEMPRE restare uniti
+  .mb-4.pb-4.border-bottom,  // Singola esperienza lavorativa
+  .mb-3.pb-3.border-bottom,  // Singola education entry
+  .contact-info,             // Info di contatto
+  h1, h2, h3, h4,           // Titoli
+  .badge {                   // Badge date
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+  
+  // Titolo + primo paragrafo/contenuto devono stare insieme
+  h2, h3, h4 {
+    page-break-after: avoid !important;
+  }
+  
+  // Colori ottimizzati per la stampa
+  body {
+    color: #000 !important;
+    background: white !important;
+  }
+  
+  html, body {
+    height: auto !important;
+    overflow: visible !important;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #000 !important;
+    orphans: 3;
+    widows: 3;
+  }
+  
+  // Mantieni le icone visibili
+  .text-primary,
+  i {
+    color: #5865f2 !important;
+  }
+  
+  // Badge e badge di data
+  .badge {
+    border: 1px solid #5865f2 !important;
+    color: #5865f2 !important;
+    background: white !important;
+  }
+  
+  // Link senza decorazione
+  a {
+    text-decoration: none !important;
+    color: #000 !important;
+  }
+  
+  // Liste: permetti rottura della lista ma non dei singoli item
+  ul, ol {
+    page-break-inside: auto !important;
+  }
+  
+  li {
+    page-break-inside: avoid !important;
+    orphans: 2;
+    widows: 2;
+  }
+  
+  // Paragrafi
+  p {
+    orphans: 3;
+    widows: 3;
+    page-break-inside: avoid !important;
+  }
+  
+  // Margini di pagina ottimali per A4
+  @page {
+    margin: 1.5cm 1.2cm;
+    size: A4 portrait;
+  }
+  
+  // Immagine del profilo deve stare con il suo container
+  img {
+    max-width: 180px !important;
+    page-break-inside: avoid !important;
+  }
+  
+  // Forza tutti i testi in nero per leggibilità
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
+  // Padding ridotto per le sezioni
+  .p-3, .p-4 {
+    padding: 0.4cm !important;
+  }
+  
+  .p-lg-5 {
+    padding: 0.5cm !important;
+  }
+  
+  .mb-5 {
+    margin-bottom: 0.4cm !important;
+  }
+  
+  .pb-3 {
+    padding-bottom: 0.2cm !important;
+  }
+  
+  .pb-4 {
+    padding-bottom: 0.3cm !important;
+  }
+  
+  // Header CV (foto + info) deve restare unito
+  .row:first-child {
+    page-break-inside: avoid !important;
+    page-break-after: auto !important;
+  }
+  
+  // Gruppo di skill in colonne
+  .row.g-4 {
+    page-break-inside: auto !important;
+    
+    .col-md-6 {
+      page-break-inside: avoid !important;
+    }
+  }
+}

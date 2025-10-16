@@ -1,0 +1,36 @@
+// ==========================================
+// MAIN STYLESHEET
+// Portfolio Personale - Progetto Start2Impact
+// ==========================================
+
+// ==========================================
+// 1. FOUNDATION - Variables & Bootstrap
+// ==========================================
+// Import custom variables (override Bootstrap defaults)
+@import "bootstrap-custom";
+
+// Import Bootstrap framework
+@import "../bootstrap-scss/bootstrap";
+
+// ==========================================
+// 2. BASE - Layout & General Styles
+// ==========================================
+@import "config";
+
+// ==========================================
+// 3. COMPONENTS - UI Elements
+// ==========================================
+@import "navbar";
+@import "footer";
+@import "contact";
+@import "cv";
+
+// ==========================================
+// 4. UTILITIES - Helper Classes
+// ==========================================
+@import "utilities";
+
+// ==========================================
+// 5. THEMES - Color Schemes
+// ==========================================
+@import "dark-mode";

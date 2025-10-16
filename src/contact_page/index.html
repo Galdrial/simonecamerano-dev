@@ -1,0 +1,268 @@
+<!-- 
+  ==========================================
+  PORTFOLIO PERSONALE - Homepage
+  ==========================================
+  Progetto Start2Impact
+  Tecnologie: HTML5, SCSS/Bootstrap 5, CSS-only interactions
+-->
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Simone Camerano</title>
+
+  <!-- Stylesheet compilato (include Bootstrap customizzato + stili custom) -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Google Fonts: Montserrat, Roboto, Google Sans Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+  <!-- 
+    ==========================================
+    HEADER - Navigation (Sticky)
+    ==========================================
+  -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container px-3">
+        <!-- Brand Logo -->
+        <a class="navbar-brand" href="/index.html">
+          <h5 class="m-0"><span class="text-primary fw-bold">SIMONE</span><span class="fw-bold">CAMERANO</span><span
+              id="dev" class="text-primary fw-semibold">.dev</span></h5>
+        </a>
+
+        <!-- 
+          MENU MOBILE - Soluzione CSS-only (senza JavaScript)
+          - Checkbox nascosto controlla lo stato del menu
+          - autocomplete="off" previene il browser dal ricordare lo stato checked
+          - Label nel toggler permette di cliccare l'icona burger
+          - Links con /index.html#section forzano page reload e chiudono il menu
+        -->
+        <input type="checkbox" id="check" autocomplete="off">
+
+        <label for="check" class="navbar-toggler" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </label>
+
+        <!-- Navigation Menu -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link fw-medium fs-6" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium fs-6" href="/about_page/">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium fs-6" href="/projects_page/">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium fs-6" href="/cv_page/">CV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium fs-6 pe-0 active" href="/contact_page/">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 
+    ==========================================
+    MAIN CONTENT
+    ==========================================
+  -->
+  <main>
+    <!-- Hero Section -->
+    <div class="container my-5">
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border-0 shadow-lg">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+          <h1 class="display-4 fw-bold lh-1 pb-5">
+            <i class="fas fa-envelope me-2 text-primary"></i>Get In Touch
+          </h1>
+          <p class="lead">
+            Have a project in mind? Want to collaborate? Or just want to say hi? 
+            Drop me a message and I'll get back to you as soon as possible.
+          </p>
+          <p class="mt-4">
+            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+            Whether you need a full-stack developer for your team or want to bring an idea to life, let's talk!
+          </p>
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+          <img class="rounded-3" src="/assets/img/istockphoto-1214282153-2048x2048.jpg" alt="Contact Simone Camerano" width="650" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Form and Contact Info -->
+    <div class="container row mx-auto">
+      <!-- Contact Form -->
+      <div class="col-lg-7 mb-5">
+        <div class="card mw-100 bg-transparent border-0">
+          <div class="card-body">
+            <h4 class="card-title pb-3">
+              <i class="fas fa-paper-plane me-2 text-primary"></i>Send Me a Message
+            </h4>
+            <form id="contact-form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="John Doe" required>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" 
+                  name="email" placeholder="john@example.com" required>
+                <div id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="title" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="title" name="title" placeholder="Project inquiry" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea class="form-control" id="message" rows="5" name="message" 
+                  placeholder="Tell me about your project..." required></textarea>
+              </div>
+              <div class="d-flex justify-content-between mt-4">
+                <button type="reset" class="btn btn-secondary btn-lg px-4 rounded-pill fw-bold">
+                  <i class="fa-solid fa-rotate-left me-2"></i>Reset
+                </button>
+                <button type="submit" value="Send" class="btn btn-primary btn-lg px-4 rounded-pill fw-bold">
+                  Send <i class="fa-solid fa-paper-plane ms-2"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-5 mb-5">
+        <div class="card mw-100 bg-transparent border-0">
+          <div class="card-body">
+            <h4 class="card-title pb-3">
+              <i class="fas fa-address-card me-2 text-primary"></i>Contact Info
+            </h4>
+            <div class="mb-4">
+              <h5 class="h6 fw-bold mb-3">Direct Contact</h5>
+              <p class="mb-2">
+                <i class="fas fa-envelope me-2 text-primary"></i>
+                <a href="mailto:info@simonecamerano.dev" class="text-decoration-none">info@simonecamerano.dev</a>
+              </p>
+              <p class="mb-2">
+                <i class="fas fa-phone me-2 text-primary"></i>
+                <a href="tel:+393385726468" class="text-decoration-none">+39 338 572 6468</a>
+              </p>
+              <p class="mb-0">
+                <i class="fas fa-map-marker-alt me-2 text-primary"></i>
+                Pesaro, Italy
+              </p>
+            </div>
+
+            
+
+            <div class="mb-4">
+              <h5 class="h6 fw-bold mb-3">Response Time</h5>
+              <p class="mb-0">
+                <i class="fas fa-clock me-2 text-primary"></i>
+                I typically respond within 24-48 hours
+              </p>
+            </div>
+
+            <div class="alert alert-info border-0" role="alert">
+              <i class="fas fa-info-circle me-2"></i>
+              <strong>Quick tip:</strong> Include details about your project or question to help me provide a better response!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- 
+    ==========================================
+    ASIDE - Optional sidebar/widgets
+    ==========================================
+  -->
+  <aside>
+    <!-- Sidebar content (if needed) -->
+  </aside>
+
+  <!-- 
+    ==========================================
+    FOOTER
+    ==========================================
+  -->
+
+  <footer class="d-flex flex-wrap justify-content-center align-items-center  px-3 py-2">
+    <div class="col-md-4 d-flex align-items-center">
+      <span class="copy mx-1">&copy; 2025 Made with Passion by Simone Camerano</span>
+    </div>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="mx-1">
+        <a href="#" aria-label="Github">
+          <i class="fa-brands fa-github fa-2x"></i>
+        </a>
+      </li>
+      <li class="mx-1">
+        <a href="#" aria-label="Linkedin">
+          <i class="fa-brands fa-linkedin fa-2x"></i>
+        </a>
+      </li>
+      <li class="mx-1">
+        <a href="#" aria-label="Facebook">
+          <i class="fa-brands fa-facebook fa-2x"></i>
+        </a>
+      </li>
+      <li class="mx-1">
+        <a href="#" aria-label="Instagram">
+          <i class="fa-brands fa-instagram fa-2x"></i>
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/bf2b231be5.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    ( function () {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init( {
+        publicKey: "mXIOitWHB2IIASFgX",
+      } );
+    } )();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById( 'contact-form' ).addEventListener( 'submit', function ( event ) {
+        event.preventDefault();
+        // these IDs from the previous steps
+        emailjs.sendForm( 'service_44q339o', 'template_pi10m0p', this )
+          .then( () => {
+            console.log( 'SUCCESS!' );
+          }, ( error ) => {
+            console.log( 'FAILED...', error );
+          } );
+      } );
+    }
+  </script>
+</body>
+
+</html>

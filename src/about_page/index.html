@@ -1,0 +1,379 @@
+<!-- 
+  ==========================================
+  PORTFOLIO PERSONALE - Homepage
+  ==========================================
+  Progetto Start2Impact
+  Tecnologie: HTML5, SCSS/Bootstrap 5, CSS-only interactions
+-->
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My CV - CV di Simone Camerano</title>
+
+  <!-- Stylesheet compilato (include Bootstrap customizzato + stili custom) -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Google Fonts: Montserrat, Roboto, Google Sans Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+  <!-- 
+    ==========================================
+    HEADER - Navigation (Sticky)
+    ==========================================
+  -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container px-3">
+        <!-- Brand Logo -->
+        <a class="navbar-brand" href="/index.html">
+          <h5 class="m-0"><span class="text-primary fw-bold">SIMONE</span><span class="fw-bold">CAMERANO</span><span
+              id="dev" class="text-primary fw-semibold">.dev</span></h5>
+        </a>
+
+        <!-- 
+          MENU MOBILE - Soluzione CSS-only (senza JavaScript)
+          - Checkbox nascosto controlla lo stato del menu
+          - autocomplete="off" previene il browser dal ricordare lo stato checked
+          - Label nel toggler permette di cliccare l'icona burger
+          - Links con /index.html#section forzano page reload e chiudono il menu
+        -->
+        <input type="checkbox" id="check" autocomplete="off">
+
+        <label for="check" class="navbar-toggler" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </label>
+
+        <!-- Navigation Menu -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link fw-medium fs-6" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium fs-6 active" href="/about_page/">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium fs-6" href="/projects_page/">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium fs-6" href="/cv_page/">CV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium fs-6 pe-0" href="/contact_page/">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 
+    ==========================================
+    MAIN CONTENT
+    ==========================================
+  -->
+  <main>
+    <!-- Main content will go here -->
+    <div class="container my-5">
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border-0 shadow-lg">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+          <h1 class="display-4 fw-bold lh-1 pb-5">
+            <i class="fas fa-user me-2 text-primary"></i>About Me
+          </h1>
+          <p class="lead">
+            Quickly design and customize responsive mobile-first sites with
+            Bootstrap, the world’s most popular front-end open source toolkit,
+            featuring Sass variables and mixins, responsive grid system,
+            extensive prebuilt components, and powerful JavaScript plugins.
+          </p>
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+          <img class="rounded-3" src="/assets/img/istockphoto-1214282153-2048x2048.jpg" alt="" width="650" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container row">
+      <div class="col-sm-6 mb-5">
+        <div class="card mw-100 bg-transparent border-0">
+          <div class="card-body">
+            <h4 class="card-title pb-3"><i class="fas fa-book-open me-2 text-primary"></i>My Story</h4>
+            <p class="card-text">
+How I Became a Developer (Spoiler: It Wasn't Planned) <br><br>
+
+Let me be honest—I didn't wake up one day at age 10 knowing I'd become
+a web developer. <br><br>
+
+My journey started with a broken website. I was trying to launch a
+small project (that never saw the light of day, by the way), and the
+template I bought was a disaster. <br>
+Instead of giving up, I opened the code. I had no idea what I was
+looking at, but something about those colorful lines of text intrigued
+<br><br>
+
+One YouTube tutorial led to another. One late night of "just one more
+fix" turned into dozens. Before I knew it, I wasn't just fixing that
+website—I was rebuilding it from scratch. And I loved every 
+frustrating, exhilarating minute of it. <br><br>
+
+What hooked me wasn't just solving problems (though I do love a good
+debugging session at 2 AM). It was the creative power. With code, I
+could turn abstract ideas into real, functional experiences. I could
+make a button that delights users. I could optimize load times and
+literally save people's time. I could build something that didn't
+exist yesterday. <br><br>
+
+Fast forward to today: I'm a full-stack developer who bridges design
+and functionality. I write clean code that makes sense to humans, not
+just machines. I believe the best solutions are invisible—users 
+shouldn't notice the technology, they should just enjoy the 
+experience. <br><br>
+
+Why do I do this? Because every project is a new challenge, every bug
+is a puzzle, and every deployment is that moment of "holy shit, I 
+actually built this." <br><br>
+
+Technology changes every day, and that's exactly why I'm here—I thrive
+on learning, adapting, and building things that matter.
+
+
+
+
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 mb-5">
+        <div class="card mw-100 bg-transparent border-0">
+          <div class="card-body">
+            <h4 class="card-title pb-3"><i class="fas fa-code me-2 text-primary"></i>Skills & Technologies</h4>
+            <p class="card-text">
+The tools I use to bring ideas to life. <br><br>
+
+FRONTEND DEVELOPMENT <br>
+I craft responsive, accessible interfaces that look great and 
+perform even better. <br><br>
+
+• HTML5 & CSS3 - Semantic markup and modern styling <br>
+
+• JavaScript (ES6+) - Interactive, dynamic user experiences <br>
+• React & Vue.js - Component-based architectures <br>
+• Sass/SCSS - Scalable, maintainable stylesheets <br>
+• Bootstrap & Tailwind - Rapid prototyping and responsive design <br><br>
+
+BACKEND DEVELOPMENT <br>
+Building robust server-side solutions that power applications. <br><br>
+
+• Node.js & Express - Fast, scalable server applications <br>
+• Python - Data processing and automation <br>
+• PHP - Dynamic web applications <br>
+• REST APIs - Clean, well-documented endpoints <br>
+• MySQL & MongoDB - Relational and NoSQL databases <br><br>
+
+TOOLS & WORKFLOW <br>
+The ecosystem that keeps my development efficient and organized. <br><br>
+
+• Git & GitHub - Version control and collaboration <br>
+• VS Code - My code editor of choice <br>
+• Docker - Containerization and consistent environments <br>
+• npm/yarn - Package management <br>
+• Webpack & Vite - Build tools and optimization <br>
+• Postman - API testing and documentation <br><br>
+
+SOFT SKILLS <br>
+The human side of development that makes projects succeed. <br><br>
+
+• Problem Solving - Breaking complex challenges into manageable 
+  solutions <br>
+• Team Collaboration - Working effectively with designers, PMs, and 
+  other developers <br>
+• Communication - Explaining technical concepts to non-technical 
+  stakeholders <br>
+• Continuous Learning - Staying current with evolving technologies <br>
+• Attention to Detail - Writing clean, maintainable, bug-free code <br>
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="container row">
+        <div class="col-sm-6 mb-5">
+          <div class="card mw-100 bg-transparent border-0">
+            <div class="card-body">
+              <h4 class="card-title pb-3"><i class="fas fa-lightbulb me-2 text-primary"></i>Values & Work Philosophy</h4>
+              <p class="card-text">
+How I Work (And Why It Matters) <br><br>
+
+I have a simple philosophy: build things that don't suck. <br> <br>
+
+Sounds basic, right? But here's what that actually means in 
+practice: <br><br>
+
+QUALITY ISN'T NEGOTIABLE <br>
+I don't ship half-baked solutions. If I'm going to put my name on
+something, it needs to work—really work. Not "works on my machine"
+work, but "tested, optimized, and bulletproof" work. I'd rather
+take an extra day to do it right than spend weeks fixing it later. <br><br>
+
+USERS ARE HUMANS, NOT DATA POINTS <br>
+Every button I code, every form I design, there's a real person on
+the other side. <br>
+Maybe they're tired, maybe they're in a hurry, maybe they're using
+a phone with one hand while holding coffee. I build for that 
+reality, not for perfect conditions that don't exist. <br><br>
+
+TEAMS > LONE WOLVES <br>
+I used to think the best developers were solo rockstars.  <br>
+I was wrong. <br>
+The best work happens when developers, designers, and stakeholders
+actually talk to each other.  <br>
+I ask questions. I share concerns early. I celebrate wins with the
+team because great products are never built alone. <br><br>
+
+LEARNING NEVER STOPS <br>
+Technology evolves. What was cutting-edge last year is legacy 
+today. <br>
+I stay curious, read docs, experiment with new tools, and admit
+when I don't know something—then go learn it. Ego has no place in 
+development. <br><br>
+
+MY CREATIVE PROCESS <br>
+Honestly? It's messy. I start with coffee and research. I sketch
+(badly) on paper.  <br>
+I prototype fast and fail faster. I refactor religiously. I test 
+obsessively. And somewhere in that chaos, something good emerges. <br><br>
+
+What makes me unique? I care—about the code, the user, the team,
+and the outcome.  <br>
+I don't just check boxes; I build solutions that actually solve 
+problems.
+</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 mb-5">
+          <div class="card mw-100 bg-transparent border-0">
+            <div class="card-body">
+              <h4 class="card-title pb-3"><i class="fas fa-heart me-2 text-primary"></i>Interests & Hobbies</h4>
+              <p class="card-text">
+When I'm Not Coding <br><br>
+
+Plot twist: I have a life outside of VS Code. Shocking, I know. <br><br>
+
+SIDE PROJECTS & EXPERIMENTS <br>
+Okay, so some of my "life outside coding" is... more coding. But
+hear me out—it's different! These are the projects nobody asked 
+for, the "what if" experiments, the tools I build because I need
+them and they don't exist yet. My GitHub is a graveyard of 
+brilliant ideas andspectacular failures. No regrets. <br><br>
+
+PHOTOGRAPHY <br>
+I shoot photos. Mostly landscapes, cityscapes, and whatever catches
+my eye. It started as a way to get away from screens, but I realized
+composition in photography is weirdly similar to UI design—balance,
+contrast, negative space, visual hierarchy. Now I can't unsee design
+principles everywhere. <br><br>
+
+GAMING (OBVIOUSLY) <br>
+I'm a gamer. RPGs, strategy games, indie experiments—I love them all.
+But I can't play games anymore without analyzing the UI, critiquing
+load times, and wondering about the backend architecture. Developer
+brain is a blessing and a curse. <br><br>
+
+MUSIC IS MY DEBUGGER <br>
+I code with music. I think with music. I have playlists for 
+different moods: "Focus Mode" for deep work, "Debug Hell" for when
+nothing makes sense, and "Deploy Day" for when I'm feeling confident. 
+I also play guitar badly and enjoy every minute of it. <br><br>
+
+GETTING OUTSIDE <br>
+Sitting all day is brutal, so I force myself outside—hiking, biking,
+walking, whatever.  <br>
+Some of my best code ideas come when I'm nowhere near a computer.
+My brain needs to defrag sometimes. <br><br>
+
+COFFEE CONNOISSEUR (OKAY, ADDICT) <br>
+Let's be honest: I run on caffeine. I've explored every coffee shop
+in my area, I own too many brewing devices, and yes, I have opinions
+about beans. It's a problem, but I'm not solving it. <br><br>
+
+Why share this? Because I'm human. I have interests, hobbies, weird
+obsessions, and a life beyond code. I think better, create better,
+and work better when I'm not just a developer—I'm a person who 
+happens to develop.
+</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+  </main>
+
+  <!-- 
+    ==========================================
+    ASIDE - Optional sidebar/widgets
+    ==========================================
+  -->
+  <aside>
+    <!-- Sidebar content (if needed) -->
+  </aside>
+
+  <!-- 
+    ==========================================
+    FOOTER
+    ==========================================
+  -->
+
+  <footer class="d-flex flex-wrap justify-content-center align-items-center  px-3 py-2">
+    <div class="col-md-4 d-flex align-items-center">
+      <span class="copy mx-1">&copy; 2025 Made with Passion by Simone Camerano</span>
+    </div>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="mx-1">
+        <a href="#" aria-label="Github">
+          <i class="fa-brands fa-github fa-2x"></i>
+        </a>
+      </li>
+      <li class="mx-1">
+        <a href="#" aria-label="Linkedin">
+          <i class="fa-brands fa-linkedin fa-2x"></i>
+        </a>
+      </li>
+      <li class="mx-1">
+        <a href="#" aria-label="Facebook">
+          <i class="fa-brands fa-facebook fa-2x"></i>
+        </a>
+      </li>
+      <li class="mx-1">
+        <a href="#" aria-label="Instagram">
+          <i class="fa-brands fa-instagram fa-2x"></i>
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/bf2b231be5.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

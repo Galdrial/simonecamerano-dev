@@ -1,0 +1,166 @@
+// ==========================================
+// DARK MODE THEME
+// ==========================================
+
+@media (prefers-color-scheme: dark) {
+  main {
+    // Background fisso per dark mode con radial-gradient
+    background: 
+      radial-gradient(circle at top right, rgba(86, 99, 242, 0.25) 0%, transparent 50%),
+      radial-gradient(circle at bottom left, rgba(115, 54, 176, 0.18) 0%, transparent 50%),
+      #1c1e21;
+    background-attachment: fixed; // Resta fisso, il contenuto scorre sopra
+    color: #f8f9fa;
+  }
+  
+  // Body & general colors
+  body {
+    background-color: #121212;
+    color: #f8f9fa;
+  }
+
+  // Navbar dark mode
+  .navbar {
+    background-color: rgba($color: #212529, $alpha: 0.85) !important;
+    backdrop-filter: blur(10px) !important;
+  }
+
+  .navbar-brand,
+  .nav-link {
+    color: #f8f9fa !important;
+  }
+
+  footer {
+    align-items: center;
+    background-color: rgba($color: #212529, $alpha: 0.85) !important;
+    backdrop-filter: blur(10px) !important;
+    
+    span, .copy {
+      color: #f8f9fa !important; // Copy chiaro in dark mode
+    }
+    
+    // Le icone rimangono primary anche in dark mode
+    a {
+      color: $primary !important;
+      
+      i, i::before {
+        color: $primary !important;
+      }
+    }
+  }
+
+  // Rimuove hover su desktop in dark mode
+  @media (min-width: 992px) {
+    #navbarNav .nav-link:hover,
+    #navbarNav .nav-link:focus {
+      background-color: transparent !important;
+      background-image: none !important;
+      box-shadow: none !important;
+    }
+  }
+
+  // Burger icon dark mode - linee bianche
+  .navbar-toggler {
+    color: #f8f9fa !important;
+  }
+
+  .navbar-toggler .navbar-toggler-icon {
+    &::before,
+    &::after {
+      background-color: #f8f9fa !important;
+    }
+  }
+
+  .card {
+    color: #f8f9fa !important;
+  }
+
+  // Burger icon quando è aperto (X)
+  #check:checked + .navbar-toggler .navbar-toggler-icon {
+    &::before,
+    &::after {
+      background-color: #f8f9fa !important;
+    }
+  }
+
+  // Menu mobile background in dark mode (SOLO MOBILE)
+  @media (max-width: 991px) {
+    #check:checked ~ .navbar-collapse {
+      // Stesso background elegante del main in dark mode
+      background: 
+        radial-gradient(circle at top right, rgba(86, 99, 242, 0.25) 0%, transparent 50%),
+        radial-gradient(circle at bottom left, rgba(115, 54, 176, 0.18) 0%, transparent 50%),
+        #1c1e21;
+    }
+
+    // Menu mobile hover istantaneo (nessuna transition)
+    #navbarNav a {
+      &:hover {
+        background: rgba(255, 255, 255, 0.10) !important;
+        backdrop-filter: blur(10px) saturate(180%);
+        border-left: 4px solid $primary;
+        padding-left: calc(2rem - 4px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+    }
+    
+    .nav-link.active {
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.15) !important;
+      backdrop-filter: blur(10px) saturate(180%);
+      border-left: 4px solid $primary;
+      padding-left: calc(2rem - 4px) !important;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  // ==========================================
+  // CV PAGE - Dark Mode
+  // ==========================================
+  
+  // CV Header
+  .cv-header {
+    .cv-photo-wrapper {
+      background: rgba(255, 255, 255, 0.10);
+    }
+    
+    .cv-photo {
+      border-color: $primary;
+    }
+  }
+  
+  // ==========================================
+  // CARD 3D EFFECT - Dark Mode Enhancement
+  // ==========================================
+  
+  // Tutte le card con shadow-lg hanno un effetto 3D più sottile in dark mode
+  .shadow-lg {
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    box-shadow: 
+      0 0.5rem 1.5rem rgba(0, 0, 0, 0.3),
+      0 0 0 1px rgba(255, 255, 255, 0.04) inset,
+      0 0 15px rgba(86, 99, 242, 0.1) !important;
+  }
+  
+  // Card trasparenti (About Me, Projects, Contact)
+  .card.bg-transparent {
+    background: rgba(255, 255, 255, 0.02) !important;
+    border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  }
+  
+  // Immagini con shadow-lg: ombre più delicate
+  img.shadow-lg,
+  .overflow-hidden.shadow-lg img,
+  .overflow-hidden.shadow-lg {
+    border: none !important;
+    box-shadow: 
+      0 0.75rem 2rem rgba(0, 0, 0, 0.4),
+      0 0 20px rgba(86, 99, 242, 0.15) !important;
+  }
+  
+  // Container immagini: rimuovi border
+  .overflow-hidden.shadow-lg {
+    background: transparent !important;
+  }
+}
