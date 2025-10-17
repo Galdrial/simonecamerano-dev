@@ -12472,6 +12472,21 @@ main {
   gap: 0.5rem;
 }
 
+.featured-img-margin {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .featured-img-margin {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 2.5rem;
+  }
+}
 @media (prefers-color-scheme: dark) {
   main {
     background: radial-gradient(circle at top right, rgba(86, 99, 242, 0.25) 0%, transparent 50%), radial-gradient(circle at bottom left, rgba(115, 54, 176, 0.18) 0%, transparent 50%), #1c1e21;

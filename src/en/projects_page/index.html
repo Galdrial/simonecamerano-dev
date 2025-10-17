@@ -11,7 +11,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Projects | Simone Camerano" />
+  <meta property="og:description" content="Discover Simone Camerano's projects, full stack developer." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://simonecamerano.dev/en/projects_page/" />
+  <meta property="og:image" content="https://simonecamerano.dev/assets/img/og-image.jpg" />
   <title>Projects | Simone Camerano</title>
+
+  <link rel="alternate" href="/projects_page/" hreflang="it" />
+  <link rel="alternate" href="/en/projects_page/" hreflang="en" />
+  <link rel="alternate" href="/projects_page/" hreflang="x-default" />
 
   <!-- Stylesheet compilato (include Bootstrap customizzato + stili custom) -->
   <link rel="stylesheet" href="/assets/css/style.css">
@@ -60,7 +69,8 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link fw-medium fs-6" aria-current="page" href="/en/index.html" aria-label="Go to Home">Home</a>
+              <a class="nav-link fw-medium fs-6" aria-current="page" href="/en/index.html"
+                aria-label="Go to Home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fw-medium fs-6" href="/en/about_page/" aria-label="Go to About page">About</a>
@@ -117,15 +127,24 @@
       </div>
     </div>
 
-    <div class="container row mx-auto">
-      <div class="col-sm-12 mb-5">
-        <div class="card mw-100 bg-transparent border-0">
-          <div class="card-body">
-            <h4 class="card-title pb-3"><i class="fas fa-project-diagram me-2 text-primary"></i>Featured Project</h4>
-            <h5 class="fw-bold">Hotel Pomelia</h5>
-            <p class="card-text">
-              Landing Page for a hypothetical Hotel located in Ragusa, Sicily. Project built with HTML5 and CSS3.
-            </p>
+    <div class="container my-5">
+      <div class="row align-items-center mb-5 gx-5">
+        <div class="col-12">
+          <div class="card mw-100 bg-transparent border-0">
+            <div class="row align-items-center g-0">
+              <div class="col-lg-8 col-12">
+                <div class="card-body">
+                  <h4 class="card-title pb-3"><i class="fas fa-project-diagram me-2 text-primary"></i>Featured Project</h4>
+                  <h5 class="fw-bold">Hotel Pomelia</h5>
+                  <p class="card-text">
+                    Landing Page for a hypothetical Hotel located in Ragusa, Sicily. Project built with HTML5 and CSS3.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-12 d-flex justify-content-center p-3 p-lg-0">
+                <img src="/assets/img/hotel-pomelia.png" alt="Hotel Pomelia Project" class="img-fluid rounded-3 shadow featured-img-margin" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
