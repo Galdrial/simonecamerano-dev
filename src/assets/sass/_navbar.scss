@@ -1,3 +1,21 @@
+@media (min-width: 992px) {
+  .nav-link:not([href*="cv_page"]) {
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+  }
+  .nav-link[href*="cv_page"] {
+    width: 100px;
+    /* min-width: 80px; */
+    text-align: center;
+    display: inline-block;
+  }
+  .icon-lang {
+    display: inline-block;
+    width: 48px;
+    text-align: center;
+  }
+}
 // ==========================================
 // NAVBAR COMPONENT
 // ==========================================
@@ -125,9 +143,9 @@
 #navbarNav {
   padding: 0 !important;
 
-  a {
+ /*  a {
     padding-right: 2rem;
-  }
+  } */
 }
 
 // Quando checkbox è checked, mostra il menu (SOLO MOBILE)
@@ -187,13 +205,13 @@
       }
     }
     a.icon-lang:hover {
-  background: none !important;
-  backdrop-filter: none !important;
-  border-left: none !important;
-  padding-left: 2rem !important;
-  box-shadow: none !important;
-  transition: none !important;
-  animation: none !important;
+      background: none !important;
+      backdrop-filter: none !important;
+      border-left: none !important;
+      padding-left: 2rem !important;
+      box-shadow: none !important;
+      transition: none !important;
+      animation: none !important;
     }
   }
 

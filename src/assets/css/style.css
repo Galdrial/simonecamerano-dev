@@ -12044,6 +12044,24 @@ main {
   color: #1c1e21 !important;
 }
 
+@media (min-width: 992px) {
+  .nav-link:not([href*=cv_page]) {
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+  }
+  .nav-link[href*=cv_page] {
+    width: 100px;
+    /* min-width: 80px; */
+    text-align: center;
+    display: inline-block;
+  }
+  .icon-lang {
+    display: inline-block;
+    width: 48px;
+    text-align: center;
+  }
+}
 .navbar {
   height: 3rem;
   padding: 0;
@@ -12137,9 +12155,9 @@ main {
 
 #navbarNav {
   padding: 0 !important;
-}
-#navbarNav a {
-  padding-right: 2rem;
+  /*  a {
+     padding-right: 2rem;
+   } */
 }
 
 @media (max-width: 991px) {
