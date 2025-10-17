@@ -10,8 +10,8 @@
   padding: 0;
   align-items: center;
   background-color: rgba($color: #eeeeee, $alpha: 0.85) !important;
-  backdrop-filter: blur(10px) !important;
-  
+  backdrop-filter: blur(10px) saturate(180%);
+
   // Colore testo automatico basato sul background
   color: color-contrast(#eeeeee);
 }
@@ -19,13 +19,13 @@
 .navbar-brand {
   padding: 0;
   color: color-contrast(#eeeeee);
-  
+
   // Effetto hover sul brand: mostra ".dev"
   #dev {
     opacity: 0;
     transition: opacity 0.3s ease, color 0.3s ease;
   }
-  
+
   &:hover {
     #dev {
       opacity: 1;
@@ -87,7 +87,7 @@
     }
 
     &::after {
-      transform:  rotate(-45deg);
+      transform: rotate(-45deg);
     }
   }
 }
@@ -151,15 +151,21 @@
 
 // Mobile styles (max-width: 991px)
 @media (max-width: 991px) {
-
   #navbarNav {
     height: 100vh;
     padding: 0 !important;
-    
+
     // Stesso background elegante del main
-    background: 
-      radial-gradient(circle at top right, rgba(86, 99, 242, 0.25) 0%, transparent 50%),
-      radial-gradient(circle at bottom left, rgba(115, 54, 176, 0.20) 0%, transparent 50%),
+    background: radial-gradient(
+        circle at top right,
+        rgba(86, 99, 242, 0.25) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at bottom left,
+        rgba(115, 54, 176, 0.2) 0%,
+        transparent 50%
+      ),
       #ffffff;
 
     ul {
@@ -180,8 +186,17 @@
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       }
     }
+    a.icon-lang:hover {
+  background: none !important;
+  backdrop-filter: none !important;
+  border-left: none !important;
+  padding-left: 2rem !important;
+  box-shadow: none !important;
+  transition: none !important;
+  animation: none !important;
+    }
   }
-  
+
   .nav-link.active {
     text-decoration: none;
     background: rgba(255, 255, 255, 0.2) !important;

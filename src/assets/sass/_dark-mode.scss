@@ -22,7 +22,7 @@
   // Navbar dark mode
   .navbar {
     background-color: rgba($color: #212529, $alpha: 0.85) !important;
-    backdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(10px) saturate(180%);
   }
 
   .navbar-brand,
@@ -33,7 +33,7 @@
   footer {
     align-items: center;
     background-color: rgba($color: #212529, $alpha: 0.85) !important;
-    backdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(10px) saturate(180%);
     
     span, .copy {
       color: #f8f9fa !important; // Copy chiaro in dark mode
