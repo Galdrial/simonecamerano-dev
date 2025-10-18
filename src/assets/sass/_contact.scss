@@ -14,3 +14,24 @@ img.contact-img {
     display: block !important;
   }
 }  
+
+/* Stile per nascondere la sezione per default */
+.sezione-informativa {
+    max-height: 0; 
+    overflow: hidden; /* Nasconde il contenuto */
+    opacity: 0;
+    transition: all 0.5s ease-in-out, opacity 0.5s ease-in-out; 
+    /* Effetto di transizione opzionale */
+    padding: 0 10px;
+    /* background-color: #f9f9f9;
+    border: 1px solid #eee; */
+    margin-top: 10px;
+}
+
+/* Stile per mostrare la sezione quando viene raggiunto l'ID dal link */
+.sezione-informativa:target {
+    max-height: 500vh; /* Un valore grande per contenere tutto il testo */
+    overflow: auto;
+    opacity: 1;
+    padding: 15px 0px;
+}
