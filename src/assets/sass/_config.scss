@@ -1,11 +1,11 @@
 // ==========================================
-// CONFIGURAZIONE GENERALE DEL SITO
+// GENERAL SITE CONFIGURATION
 // ==========================================
-// Questo file contiene gli stili globali e configurazioni
-// NON contiene variabili Bootstrap (quelle sono in _bootstrap-custom.scss)
+// This file contains global styles and configuration
+// Does NOT contain Bootstrap variables (those are in _bootstrap-custom.scss)
 
 // ==========================================
-// LAYOUT GENERALE
+// GENERAL LAYOUT
 // ==========================================
 
 $navbar-height: 3rem;
@@ -21,13 +21,13 @@ html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  overflow-y: auto; // Permette lo scroll verticale
+  overflow-y: auto; // Enables vertical scrolling
   scroll-behavior: smooth;
   scrollbar-width: none !important; // Firefox
-  -ms-overflow-style: none !important; // IE e Edge legacy
+  -ms-overflow-style: none !important; // IE and Edge legacy
 
   &::-webkit-scrollbar {
-    display: none !important; // Chrome, Safari, Opera
+  display: none !important; // Chrome, Safari, Opera
     width: 0 !important;
     height: 0 !important;
   }
@@ -38,19 +38,19 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  overflow-y: auto; // Permette lo scroll verticale
+  overflow-y: auto; // Enables vertical scrolling
   display: flex;
   flex-direction: column;
   /* padding: 2rem; */
   
-  // Nascondi scrollbar anche su body per maggiore compatibilità
+  // Hide scrollbar on body as well for greater compatibility
   scrollbar-width: none !important; // Firefox
-  -ms-overflow-style: none !important; // IE e Edge legacy
+  -ms-overflow-style: none !important; // IE and Edge legacy
   
   transition: background-color 0.3s ease, color 0.3s ease;
   
   &::-webkit-scrollbar {
-    display: none !important; // Chrome, Safari, Opera
+  display: none !important; // Chrome, Safari, Opera
     width: 0 !important;
     height: 0 !important;
   }

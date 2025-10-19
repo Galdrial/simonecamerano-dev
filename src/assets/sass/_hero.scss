@@ -5,13 +5,13 @@
 
 .hero-main {
 	text-align: center;
-	// Centra l'immagine hero su mobile
+	// Center hero image on mobile
 	img, .img-fluid {
 		margin-left: auto !important;
 		margin-right: auto !important;
 		display: block !important;
 	}
-	// Centra anche la colonna che contiene l'immagine
+	// Also center the column containing the image
 	[class*="col-"] {
 		margin-left: auto;
 		margin-right: auto;

@@ -1,4 +1,4 @@
-// Mobile first: regole di default per mobile
+// Mobile first: default rules for mobile
 main {
   flex-direction: column !important;
   flex-wrap: wrap !important;
@@ -15,20 +15,20 @@ img.contact-img {
   }
 }  
 
-/* Stile per nascondere la sezione per default */
+/* Style to hide the section by default */
 .sezione-informativa {
     max-height: 0; 
-    overflow: hidden; /* Nasconde il contenuto */
+  overflow: hidden; /* Hides the content */
     opacity: 0;
     transition: all 0.5s ease-in-out, opacity 0.5s ease-in-out; 
-    /* Effetto di transizione opzionale */
+  /* Optional transition effect */
     padding: 0 10px;
     margin-top: 10px;
 }
 
-/* Stile per mostrare la sezione quando viene raggiunto l'ID dal link */
+/* Style to show the section when the ID is reached from the link */
 .sezione-informativa:target {
-    max-height: 500vh; /* Un valore grande per contenere tutto il testo */
+  max-height: 500vh; /* A large value to contain all the text */
     overflow: auto;
     opacity: 1;
     padding: 15px 0px;
