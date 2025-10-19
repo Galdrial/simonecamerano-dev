@@ -12155,9 +12155,6 @@ main {
 
 #navbarNav {
   padding: 0 !important;
-  /*  a {
-     padding-right: 2rem;
-   } */
 }
 
 @media (max-width: 991px) {
@@ -12336,8 +12333,6 @@ img.contact-img {
   transition: all 0.5s ease-in-out, opacity 0.5s ease-in-out;
   /* Effetto di transizione opzionale */
   padding: 0 10px;
-  /* background-color: #f9f9f9;
-  border: 1px solid #eee; */
   margin-top: 10px;
 }
 

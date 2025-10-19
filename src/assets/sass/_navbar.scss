@@ -16,13 +16,7 @@
     text-align: center;
   }
 }
-// ==========================================
-// NAVBAR COMPONENT
-// ==========================================
 
-// ==========================================
-// 1. BASE NAVBAR STYLES
-// ==========================================
 .navbar {
   height: 3rem;
   padding: 0;
@@ -76,9 +70,6 @@
   text-decoration-thickness: 2px;
 }
 
-// ==========================================
-// 2. NAVBAR TOGGLER & BURGER ICON
-// ==========================================
 
 // Checkbox nascosto per toggle menu (CSS-only solution)
 #check {
@@ -136,16 +127,8 @@
   }
 }
 
-// ==========================================
-// 3. NAVBAR COLLAPSE (MENU MOBILE)
-// ==========================================
-
 #navbarNav {
   padding: 0 !important;
-
- /*  a {
-    padding-right: 2rem;
-  } */
 }
 
 // Quando checkbox è checked, mostra il menu (SOLO MOBILE)
@@ -163,9 +146,6 @@
   }
 }
 
-// ==========================================
-// 4. RESPONSIVE - MOBILE FIRST
-// ==========================================
 
 // Mobile styles (max-width: 991px)
 @media (max-width: 991px) {

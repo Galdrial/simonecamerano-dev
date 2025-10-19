@@ -8,10 +8,6 @@
 // LAYOUT GENERALE
 // ==========================================
 
-// Variabile per altezza navbar
-
-
-
 $navbar-height: 3rem;
 
 * {
@@ -61,16 +57,12 @@ body {
 }
 
 main {
-  flex: 1; // Occupa automaticamente tutto lo spazio disponibile
-  
-  // Background elegante più visibile in light mode
+  flex: 1;
   background: 
     radial-gradient(circle at top right, rgba(86, 99, 242, 0.25) 0%, transparent 50%),
     radial-gradient(circle at bottom left, rgba(115, 54, 176, .20) 0%, transparent 50%),
     #ffffff;
   background-attachment: fixed; // Resta fisso, il contenuto scorre sopra
-  
-  // Centra il contenuto verticalmente
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,7 +71,7 @@ main {
 
 .copy {
   font-size: 0.7rem !important;
-  color: $body-color !important; // Colore del testo di default
+  color: $body-color !important;
 }
 
 
