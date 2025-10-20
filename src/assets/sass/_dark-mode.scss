@@ -30,6 +30,11 @@
     color: #f8f9fa !important;
   }
 
+  .scroll-top__link {
+    background-color: rgba($color: #212529, $alpha: 0.85) !important;
+    backdrop-filter: blur(10px) saturate(180%);
+  }
+
   footer {
     align-items: center;
     background-color: rgba($color: #212529, $alpha: 0.85) !important;

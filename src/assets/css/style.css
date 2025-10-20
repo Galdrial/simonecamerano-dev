@@ -11992,6 +11992,7 @@ textarea.form-control-lg {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -12000,7 +12001,7 @@ html {
   padding: 0;
   overflow-x: hidden;
   overflow-y: auto;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   scrollbar-width: none !important;
   -ms-overflow-style: none !important;
 }
@@ -12030,6 +12031,7 @@ body::-webkit-scrollbar {
 }
 
 main {
+  position: relative;
   flex: 1;
   background: radial-gradient(circle at top right, rgba(86, 99, 242, 0.25) 0%, transparent 50%), radial-gradient(circle at bottom left, rgba(115, 54, 176, 0.2) 0%, transparent 50%), #ffffff;
   background-attachment: fixed;
@@ -12044,6 +12046,40 @@ main {
   color: #1c1e21 !important;
 }
 
+.scroll-top {
+  position: absolute;
+  top: 110svh;
+  bottom: 0.5rem;
+  right: 2rem;
+}
+
+.scroll-top__link {
+  position: -webkit-sticky;
+  width: 48px;
+  height: 48px;
+  position: sticky;
+  top: 85vh;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: rgba(238, 238, 238, 0.85) !important;
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+          backdrop-filter: blur(10px) saturate(180%);
+  border: 2px solid #5663ee;
+  padding: 0.5rem;
+  color: #5663ee;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.scroll-top__link:hover {
+  opacity: initial;
+}
+
+@media (min-width: 992px) {
+  .scroll-top {
+    display: none;
+  }
+}
 @media (min-width: 992px) {
   .nav-link:not([href*=cv_page]) {
     width: 100px;
@@ -12394,6 +12430,11 @@ main {
   .navbar-brand,
   .nav-link {
     color: #f8f9fa !important;
+  }
+  .scroll-top__link {
+    background-color: rgba(33, 37, 41, 0.85) !important;
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+            backdrop-filter: blur(10px) saturate(180%);
   }
   footer {
     align-items: center;
