@@ -2,9 +2,7 @@
 
 This repository contains the source code for the personal website of Simone Camerano, full stack developer. The site was created as a project for Start2Impact and serves as a showcase of my skills, projects, and professional journey.
 
-## Demo
 
-🌐 [simonecamerano.dev](https://simonecamerano.dev)
 
 ## Main Features
 
