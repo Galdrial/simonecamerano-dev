@@ -10,6 +10,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Contact Simone Camerano for collaborations, questions or job opportunities in web development." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:title" content="Contact | Simone Camerano" />
   <meta property="og:description" content="Contact Simone Camerano, full stack developer." />
@@ -18,9 +19,9 @@
   <meta property="og:image" content="https://simonecamerano.dev/assets/img/og-image.jpg" />
   <title>Contact | Simone Camerano</title>
 
-  <link rel="alternate" href="../contact_page/" hreflang="it" />
-  <link rel="alternate" href="contact_page/" hreflang="en" />
-  <link rel="alternate" href="../contact_page/" hreflang="x-default" />
+  <link rel="alternate" href="https://simonecamerano.dev/contact_page/" hreflang="it" />
+  <link rel="alternate" href="https://simonecamerano.dev/en/contact_page/" hreflang="en" />
+  <link rel="alternate" href="https://simonecamerano.dev/contact_page/" hreflang="x-default" />
 
   <!-- Stylesheet compilato (include Bootstrap customizzato + stili custom) -->
   <link rel="stylesheet" href="../../assets/css/style.css">
@@ -48,8 +49,10 @@
       <div class="container px-3">
         <!-- Brand Logo -->
   <a class="navbar-brand" href="../index.html">
-          <h5 class="m-0"><span class="text-primary fw-bold">SIMONE</span><span class="fw-bold">CAMERANO</span><span
-              id="dev" class="text-primary fw-semibold">.dev</span></h5>
+          <span class="m-0" style="font-size:1.25rem; font-weight:700; line-height:1.2; display:inline-block;">
+            <span class="text-primary fw-bold">SIMONE</span><span class="fw-bold">CAMERANO</span><span
+              id="dev" class="text-primary fw-semibold">.dev</span>
+          </span>
         </a>
 
         <!-- 
@@ -110,8 +113,13 @@
           </p>
         </div>
         <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-          <img class="rounded-3 contact-img" src="../../assets/img/simo.jpg"
-            alt="Contact Simone Camerano" width="650" />
+         <picture>
+            <source media="(max-width: 600px)"
+              srcset="/assets/img/simo-mobile-700px.jpg" />
+            <img class="rounded-3" src="../../assets/img/simo-standard-650px.jpg"
+              srcset="/assets/img/simo-standard-650px.jpg 1x, /assets/img/simo-retina-1300px.jpg 2x"
+              alt="Simone Camerano" fetchpriority="high" width="650" />
+          </picture>
         </div>
       </div>
     </div>
@@ -122,7 +130,7 @@
       <div class="col-lg-7 mb-5">
         <div class="card mw-100 bg-transparent border-0">
           <div class="card-body">
-            <h4 class="card-title pb-3">
+            <h3 class="card-title pb-3">
               <i class="fas fa-paper-plane me-2 text-primary"></i>Send Me a Message
             </h4>
             <form id="contact-form">
@@ -217,25 +225,9 @@
       <div class="col-lg-5 mb-5">
         <div class="card mw-100 bg-transparent border-0">
           <div class="card-body">
-            <h4 class="card-title pb-3">
+            <h3 class="card-title pb-3">
               <i class="fas fa-address-card me-2 text-primary"></i>Contact Info
             </h4>
-            <div class="mb-4">
-              <h5 class="h6 fw-bold mb-3">Direct Contact</h5>
-              <p class="mb-2">
-                <i class="fas fa-envelope me-2 text-primary"></i>
-                <a href="mailto:info@simonecamerano.dev" class="text-decoration-none">info@simonecamerano.dev</a>
-              </p>
-              <p class="mb-2">
-                <i class="fas fa-phone me-2 text-primary"></i>
-                <a href="tel:+393385726468" class="text-decoration-none">+39 338 572 6468</a>
-              </p>
-              <p class="mb-0">
-                <i class="fas fa-map-marker-alt me-2 text-primary"></i>
-                Pesaro, Italy
-              </p>
-            </div>
-
             <div class="mb-4">
               <h5 class="h6 fw-bold mb-3">Response Time</h5>
               <p class="mb-0">

@@ -10,6 +10,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Simone Camerano's curriculum vitae: education, work experience and technical skills." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:title" content="CV | Simone Camerano" />
   <meta property="og:description" content="Curriculum vitae of Simone Camerano, full stack developer." />
@@ -18,9 +19,9 @@
   <meta property="og:image" content="https://simonecamerano.dev/assets/img/og-image.jpg" />
   <title>CV | Simone Camerano</title>
 
-  <link rel="alternate" href="../cv_page/" hreflang="it" />
-  <link rel="alternate" href="cv_page/" hreflang="en" />
-  <link rel="alternate" href="../cv_page/" hreflang="x-default" />
+  <link rel="alternate" href="https://simonecamerano.dev/cv_page/" hreflang="it" />
+  <link rel="alternate" href="https://simonecamerano.dev/en/cv_page/" hreflang="en" />
+  <link rel="alternate" href="https://simonecamerano.dev/cv_page/" hreflang="x-default" />
 
   <!-- Stylesheet compilato -->
   <link rel="stylesheet" href="../../assets/css/style.css">
@@ -43,8 +44,10 @@
       <div class="container px-3">
         <!-- Brand Logo -->
   <a class="navbar-brand" href="../index.html">
-          <h5 class="m-0"><span class="text-primary fw-bold">SIMONE</span><span class="fw-bold">CAMERANO</span><span
-              id="dev" class="text-primary fw-semibold">.dev</span></h5>
+          <span class="m-0" style="font-size:1.25rem; font-weight:700; line-height:1.2; display:inline-block;">
+            <span class="text-primary fw-bold">SIMONE</span><span class="fw-bold">CAMERANO</span><span
+              id="dev" class="text-primary fw-semibold">.dev</span>
+          </span>
         </a>
 
         <!-- 
@@ -99,15 +102,15 @@
             Here you’ll find my professional story, the most important milestones, the knowledge I’ve gained, and the
             challenges I’ve faced.
           </p>
-          <div class="contact-info">
-            <p class="mb-2"><i class="fas fa-envelope me-2 text-primary"></i> info@simonecamerano.dev</p>
-            <p class="mb-2"><i class="fas fa-phone me-2 text-primary"></i> +39 338 572 6468</p>
-            <p class="mb-2"><i class="fas fa-map-marker-alt me-2 text-primary"></i> Pesaro, Italy</p>
-          </div>
         </div>
         <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-          <img class="rounded-3" src="../../assets/img/simo.jpg" alt="Simone Camerano"
-            width="650" />
+         <picture>
+            <source media="(max-width: 600px)"
+              srcset="/assets/img/simo-mobile-700px.jpg" />
+            <img class="rounded-3" src="../../assets/img/simo-standard-650px.jpg"
+              srcset="/assets/img/simo-standard-650px.jpg 1x, /assets/img/simo-retina-1300px.jpg 2x"
+              alt="Simone Camerano" fetchpriority="high" width="650" />
+          </picture>
         </div>
       </div>
 
@@ -136,7 +139,7 @@
           </h3>
           <div class="row g-4">
             <div class="col-md-6">
-              <h4 class="h5 fw-bold text-primary mb-3">Frontend Development</h4>
+                <h3 class="h5 fw-bold text-primary mb-3">Frontend Development</h3>
               <ul class="list-unstyled">
                 <li class="mb-2"><i class="fa-solid fa-circle text-success"></i> HTML5, CSS3, JavaScript (ES6+)</li>
                 <li class="mb-2"><i class="fa-solid fa-circle text-success"></i> Sass/SCSS, Bootstrap</li>
@@ -147,7 +150,7 @@
               </ul>
             </div>
             <div class="col-md-6">
-              <h4 class="h5 fw-bold text-primary mb-3">Backend Development</h4>
+                <h3 class="h5 fw-bold text-primary mb-3">Backend Development</h3>
               <ul class="list-unstyled">
                 <li class="mb-2"><i class="fa-solid fa-circle text-success"></i> Python, Django</li>
                 <li class="mb-2"><i class="fa-solid fa-circle text-success"></i> Authentication & Security</li>
@@ -157,14 +160,14 @@
               </ul>
             </div>
             <div class="col-md-6">
-              <h4 class="h5 fw-bold text-primary mb-3">Tools & Workflow</h4>
+              <h3 class="h5 fw-bold text-primary mb-3">Tools & Workflow</h3>
               <ul class="list-unstyled">
                 <li class="mb-2"><i class="fa-solid fa-circle text-success"></i> Git, GitHub, GitLab</li>
                 <li class="mb-2"><i class="fa-solid fa-circle text-success"></i> VS Code</li>
               </ul>
             </div>
             <div class="col-md-6">
-              <h4 class="h5 fw-bold text-primary mb-3">Soft Skills</h4>
+              <h3 class="h5 fw-bold text-primary mb-3">Soft Skills</h3>
               <ul class="list-unstyled">
                 <li class="mb-2"><i class="fa-solid fa-circle text-success"></i> Problem Solving & Critical Thinking</li>
                 <li class="mb-2"><i class="fa-solid fa-circle text-success"></i> Team Collaboration</li>
@@ -186,7 +189,7 @@
           <div class="mb-4 pb-4 border-bottom">
             <div class="d-flex justify-content-between align-items-start mb-2">
               <div>
-                <h4 class="h5 fw-bold mb-1">Commercial and Operational</h4>
+                <h3 class="h5 fw-bold mb-1">Commercial and Operational</h3>
                 <!-- <p class="text-primary mb-0">Tech Innovations Srl, Milan</p> -->
               </div>
               <span class="badge bg-primary rounded-pill">1999 - Present</span>
@@ -203,7 +206,7 @@
           <div class="mb-4 pb-4 border-bottom">
             <div class="d-flex justify-content-between align-items-start mb-2">
               <div>
-                <h4 class="h5 fw-bold mb-1">Frontend Developer</h4>
+                <h3 class="h5 fw-bold mb-1">Frontend Developer</h3>
                 <p class="text-primary mb-0">Digital Solutions Agency, Rome</p>
               </div>
               <span class="badge bg-secondary rounded-pill">2020 - 2022</span>
@@ -219,7 +222,7 @@
           <div>
             <div class="d-flex justify-content-between align-items-start mb-2">
               <div>
-                <h4 class="h5 fw-bold mb-1">Junior Web Developer</h4>
+                <h3 class="h5 fw-bold mb-1">Junior Web Developer</h3>
                 <p class="text-primary mb-0">StartUp Hub, Milan</p>
               </div>
               <span class="badge bg-secondary rounded-pill">2019 - 2020</span>
@@ -243,7 +246,7 @@
           <div class="mb-3 pb-3 border-bottom">
             <div class="d-flex justify-content-between align-items-start">
               <div>
-                <h4 class="h5 fw-bold mb-1">Master in Full Stack Development</h4>
+                <h3 class="h5 fw-bold mb-1">Master in Full Stack Development</h3>
                 <p class="text-primary mb-0">Start2Impact</p>
               </div>
               <span class="badge bg-primary rounded-pill">2025 - Ongoing</span>
@@ -253,7 +256,7 @@
           <div class="mb-3 pb-3 border-bottom">
             <div class="d-flex justify-content-between align-items-start">
               <div>
-                <h4 class="h5 fw-bold mb-1">Python from Zero to Hero</h4>
+                <h3 class="h5 fw-bold mb-1">Python from Zero to Hero</h3>
                 <p class="text-primary mb-0">DataMasters</p>
               </div>
               <span class="badge bg-secondary rounded-pill">2025</span>
@@ -263,7 +266,7 @@
           <div class="mb-3 pb-3 border-bottom">
             <div class="d-flex justify-content-between align-items-start">
               <div>
-                <h4 class="h5 fw-bold mb-1">Python Programming - M01 (16 hours)</h4>
+                <h3 class="h5 fw-bold mb-1">Python Programming - M01 (16 hours)</h3>
                 <p class="text-primary mb-0">Abforma</p>
               </div>
               <span class="badge bg-secondary rounded-pill">2025</span>
@@ -280,15 +283,15 @@
           </h3>
           <div class="row">
             <div class="col-md-4 mb-3">
-              <h4 class="h6 fw-bold">Italian</h4>
+              <h3 class="h6 fw-bold">Italian</h3>
               <p class="mb-0">Native</p>
             </div>
             <div class="col-md-4 mb-3">
-              <h4 class="h6 fw-bold">English</h4>
+              <h3 class="h6 fw-bold">English</h3>
               <p class="mb-0">Intermediate (B1)</p>
             </div>
             <div class="col-md-4 mb-3">
-              <h4 class="h6 fw-bold">French</h4>
+              <h3 class="h6 fw-bold">French</h3>
               <p class="mb-0">Intermediate (B1)</p>
             </div>
           </div>
