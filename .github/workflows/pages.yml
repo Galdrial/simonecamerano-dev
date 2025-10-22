@@ -1,0 +1,25 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Copy src to docs
+        run: |
+          rm -rf docs
+          cp -r src docs
+
+      # (Aggiungi qui eventuali step di build, es. npm install, jekyll build, ecc.)
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
+        with:
+          publish_dir: docs
