@@ -11,3 +11,6 @@ find docs -name "*.html" | while read file; do
     -e 's|url(/img|url(img|g' \
     "$file"
 done
+    -e 's|src="/assets/img|src="assets/img|g' \
+    -e 's|url(/assets/img|url(assets/img|g' \
+    -e 's|url(/assets|url(assets|g' \
