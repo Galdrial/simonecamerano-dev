@@ -29,6 +29,11 @@ jobs:
           find docs -type f -name '*.html' -exec sed -i "s/srcset=\"\//srcset=\"/g" {} +
           find docs -type f -name '*.html' -exec sed -i "s/, \/assets/, assets/g" {} +
 
+      - name: Rimuovi lo slash iniziale da tutti i percorsi assoluti
+        run: |
+          find docs -type f -name '*.html' -exec sed -i 's/\([=][ ]*["'"']\)\//\1/g' {} +
+          find docs -type f -name '*.html' -exec sed -i 's/url(\//url(/g' {} +
+
       - name: Commit and push changes
         run: |
           git config --global user.name 'github-actions[bot]'
