@@ -1,0 +1,25 @@
+// ==========================================
+// HERO SECTION STYLES (Bootstrap layout)
+// ==========================================
+
+
+.hero-main {
+	text-align: center;
+	// Center hero image on mobile
+	img, .img-fluid {
+		margin-left: auto !important;
+		margin-right: auto !important;
+		display: block !important;
+	}
+	// Also center the column containing the image
+	[class*="col-"] {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.buttons {
+		justify-content: center !important;
+	}
+	button.btn {
+		margin-top: 1rem !important;
+	}
+}

@@ -1,0 +1,28 @@
+// ==========================================
+// CV PAGE STYLES
+// ==========================================
+// Minimal styles for the CV page
+
+// Contact Info
+.contact-info {
+  font-size: 0.95rem;
+  
+  p {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  i {
+    width: 20px;
+  }
+}
+
+
+
+// Mobile first: default rules for mobile
+main {
+  flex-direction: column !important;
+  flex-wrap: wrap !important;
+  gap: 0.5rem;
+}
