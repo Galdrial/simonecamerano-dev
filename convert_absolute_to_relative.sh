@@ -3,7 +3,7 @@
 # Converte i percorsi assoluti in relativi nei file HTML
 
     
-#find docs -name "*.html" | while read file; do
+find docs -name "*.html" | while read file; do
   sed -i \
     -e 's|href="/|href="|g' \
     -e 's|src="/assets/img|src="assets/img|g' \
