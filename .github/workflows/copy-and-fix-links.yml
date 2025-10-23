@@ -19,7 +19,7 @@ jobs:
 
       - name: Inietta il tag base nei file HTML di docs
         run: |
-          find docs -type f -name '*.html' -exec sed -i '/<head>/a <base href="https://galdrial.github.io/simonecamerano-dev/docs/">' {} +
+          find docs -type f -name '*.html' -exec sed -i '/<head>/a <base href="https://galdrial.github.io/simonecamerano-dev/">' {} +
 
       - name: Commit and push changes
         run: |
