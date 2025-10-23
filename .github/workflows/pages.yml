@@ -17,6 +17,9 @@ jobs:
           rm -rf docs
           cp -r src docs
 
+      - name: Convert absolute paths to relative
+        run: bash convert_absolute_to_relative.sh
+
       # (Aggiungi qui eventuali step di build, es. npm install, jekyll build, ecc.)
 
       - name: Deploy to GitHub Pages
