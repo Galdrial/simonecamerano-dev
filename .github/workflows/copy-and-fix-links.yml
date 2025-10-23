@@ -21,6 +21,15 @@ jobs:
         run: |
           find docs -type f -name '*.html' -exec sed -i '/<head>/a <base href="https://galdrial.github.io/simonecamerano-dev/">' {} +
 
+      - name: Converti tutti i link assoluti in relativi nei file HTML di docs
+        run: |
+          find docs -type f -name '*.html' -exec sed -i 's/href="\//href="/g' {} +
+          find docs -type f -name '*.html' -exec sed -i "s/href='\//href='/g" {} +
+          find docs -type f -name '*.html' -exec sed -i 's/src="\//src="/g' {} +
+          find docs -type f -name '*.html' -exec sed -i "s/src='\//src='/g" {} +
+          find docs -type f -name '*.html' -exec sed -i 's/srcset="\//srcset="/g' {} +
+          find docs -type f -name '*.html' -exec sed -i "s/srcset='\//srcset='/g" {} +
+
       - name: Commit and push changes
         run: |
           git config --global user.name 'github-actions[bot]'
