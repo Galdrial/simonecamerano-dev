@@ -29,6 +29,8 @@ jobs:
           find docs -type f -name '*.html' -exec sed -i "s/src='\//src='/g" {} +
           find docs -type f -name '*.html' -exec sed -i 's/srcset="\//srcset="/g' {} +
           find docs -type f -name '*.html' -exec sed -i "s/srcset='\//srcset='/g" {} +
+          find docs -type f -name '*.html' -exec sed -i 's/=\(["'\'']\)\//=\1/g' {} +
+          find docs -type f -name '*.html' -exec sed -i 's/url(\//url(/g' {} +
 
       - name: Commit and push changes
         run: |
