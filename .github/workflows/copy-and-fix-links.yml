@@ -31,7 +31,7 @@ jobs:
 
       - name: Rimuovi lo slash iniziale da tutti i percorsi assoluti
         run: |
-          find docs -type f -name '*.html' -exec sed -i 's/\([=][ ]*["'"']\)\//\1/g' {} +
+          find docs -type f -name '*.html' -exec sed -i 's/=\(["'\'']\)\//=\1/g' {} +
           find docs -type f -name '*.html' -exec sed -i 's/url(\//url(/g' {} +
 
       - name: Commit and push changes
