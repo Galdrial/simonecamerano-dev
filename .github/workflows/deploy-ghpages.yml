@@ -27,6 +27,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./src
           publish_branch: gh-pages
+          force: true
 
       - name: Restore absolute paths for main branch
         if: always()
