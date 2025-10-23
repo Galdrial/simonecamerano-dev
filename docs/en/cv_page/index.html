@@ -1,0 +1,313 @@
+<!-- 
+  ==========================================
+  PORTFOLIO PERSONALE - CV - EN
+  ==========================================
+  Progetto Start2Impact
+  Tecnologie: HTML5, SCSS/Bootstrap 5, CSS-only interactions
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description"
+    content="Simone Camerano's curriculum vitae: education, work experience and technical skills." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="CV | Simone Camerano" />
+  <meta property="og:description" content="Curriculum vitae of Simone Camerano, full stack developer." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://simonecamerano.dev/en/cv_page/" />
+  <meta property="og:image"
+    content="https://galdrial.github.io/simonecamerano-dev/assets/img/og-image-cv-en.jpg" />
+  <title>CV | Simone Camerano</title>
+
+  <link rel="alternate" href="https://simonecamerano.dev/cv_page/" hreflang="it" />
+  <link rel="alternate" href="https://simonecamerano.dev/en/cv_page/" hreflang="en" />
+  <link rel="alternate" href="https://simonecamerano.dev/cv_page/" hreflang="x-default" />
+
+  <!-- Stylesheet compilato -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/img/favicon-16x16.png" type="image/png">
+</head>
+
+<body>
+  <div id="top"></div>
+  <!-- HEADER - Navigation -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container px-3">
+        <!-- Brand Logo -->
+        <a class="navbar-brand" href="/en/index.html">
+          <span class="m-0" style="font-size:1.25rem; font-weight:700; line-height:1.2; display:inline-block;">
+            <span class="text-primary fw-bold">SIMONE</span><span class="fw-bold">CAMERANO</span><span id="dev"
+              class="text-primary fw-semibold">.dev</span>
+          </span>
+        </a>
+
+        <!-- 
+          MENU MOBILE - Soluzione CSS-only (senza JavaScript)
+        -->
+        <input type="checkbox" id="check" autocomplete="off">
+
+        <label for="check" class="navbar-toggler" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </label>
+
+        <!-- Navigation Menu -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link fw-medium fs-6" aria-current="page" href="/en/index.html"
+                aria-label="Go to Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium fs-6" href="/en/about_page/" aria-label="Go to About page">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium fs-6" href="/en/projects_page/" aria-label="Go to Projects page">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium fs-6 active" href="/en/cv_page/" aria-label="Go to CV page">CV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium fs-6" href="/en/contact_page/" aria-label="Go to Contact page">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium fs-6 pe-0 text-decoration-none icon-lang" href="/cv_page/"
+                aria-label="Switch to Italian"><i class="fa-solid fa-earth-europe"></i> IT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <div class="container my-5">
+
+      <!-- CV Header with Photo -->
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border-0 shadow-lg mb-5">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+          <h1 class="display-4 fw-bold lh-1 pb-3">Simone Camerano</h1>
+          <h2 class="h4 mb-4">Full Stack Web Developer</h2>
+          <p class="lead mb-4">
+            My journey hasn’t been linear, but every experience has helped shape the skills I use today.
+            Here you’ll find my professional story, the most important milestones, the knowledge I’ve gained, and the
+            challenges I’ve faced.
+          </p>
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+          <picture>
+            <source media="(max-width: 600px)" srcset="/assets/img/simo-mobile-700px.jpg" />
+            <img class="rounded-3" src="/assets/img/simo-standard-650px.jpg"
+              srcset="/assets/img/simo-standard-650px.jpg 1x, /assets/img/simo-retina-1300px.jpg 2x"
+              alt="Simone Camerano" fetchpriority="high" width="650" />
+          </picture>
+        </div>
+      </div>
+
+      <!-- Professional Summary -->
+      <div class="row p-4 pe-lg-0 align-items-center rounded-3 border-0 shadow-lg mb-5">
+        <div class="col-lg-12 p-3 p-lg-5">
+          <h3 class="h2 fw-bold mb-4">
+            <i class="fas fa-user me-2 text-primary"></i>Professional Summary
+          </h3>
+          <p class="lead">
+            Aspiring full stack developer with a strong passion for technology and continuous learning.
+            Although I don’t have professional experience yet, I am committed to building solid foundations in web
+            development through self-study, online courses, and personal projects.
+            I am curious, determined, and eager to grow, ready to face new challenges, collaborate with others, and turn
+            ideas into real solutions.
+            I believe that attitude, perseverance, and the desire to learn are just as important as technical skills.
+          </p>
+        </div>
+      </div>
+
+      <!-- Technical Skills -->
+      <div class="row p-4 pe-lg-0 align-items-start rounded-3 border-0 shadow-lg mb-5">
+        <div class="col-lg-12 p-3 p-lg-5">
+          <h3 class="h2 fw-bold mb-4">
+            <i class="fas fa-code me-2 text-primary"></i>Technical Skills
+          </h3>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <h3 class="h5 fw-bold text-primary mb-3">Frontend Development</h3>
+              <ul class="list-unstyled">
+                <li class="mb-2"><i class="fa-solid fa-circle text-success"></i> HTML5, CSS3, JavaScript (ES6+)</li>
+                <li class="mb-2"><i class="fa-solid fa-circle text-success"></i> Sass/SCSS, Bootstrap</li>
+                <li class="mb-2"><i class="fa-solid fa-circle text-success"></i> Responsive Design, Web Accessibility
+                </li>
+                <li class="mb-2"><i class="fa-solid fa-circle text-warning"></i> TypeScript, Work in Progres</li>
+                <li class="mb-2"><i class="fa-solid fa-circle text-warning"></i> JavaScript, Work in Progres</li>
+                <li class="mb-2"><i class="fa-solid fa-circle text-warning"></i> React, Work in Progres</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h3 class="h5 fw-bold text-primary mb-3">Backend Development</h3>
+              <ul class="list-unstyled">
+                <li class="mb-2"><i class="fa-solid fa-circle text-success"></i> Python, Django</li>
+                <li class="mb-2"><i class="fa-solid fa-circle text-success"></i> Authentication & Security</li>
+                <li class="mb-2"><i class="fa-solid fa-circle text-warning"></i> PHP e MySQL, Work in Progres</li>
+                <li class="mb-2"><i class="fa-solid fa-circle text-warning"></i> WordPress, Work in Progres</li>
+                <li class="mb-2"><i class="fa-solid fa-circle text-warning"></i> Node.js, Work in Progres</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h3 class="h5 fw-bold text-primary mb-3">Tools & Workflow</h3>
+              <ul class="list-unstyled">
+                <li class="mb-2"><i class="fa-solid fa-circle text-success"></i> Git, GitHub, GitLab</li>
+                <li class="mb-2"><i class="fa-solid fa-circle text-success"></i> VS Code</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h3 class="h5 fw-bold text-primary mb-3">Soft Skills</h3>
+              <ul class="list-unstyled">
+                <li class="mb-2"><i class="fa-solid fa-circle text-success"></i> Problem Solving & Critical Thinking
+                </li>
+                <li class="mb-2"><i class="fa-solid fa-circle text-success"></i> Team Collaboration</li>
+                <li class="mb-2"><i class="fa-solid fa-circle text-success"></i> Clear Communication</li>
+                <li class="mb-2"><i class="fa-solid fa-circle text-success"></i> Time Management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Work Experience -->
+      <div class="row p-4 pe-lg-0 align-items-start rounded-3 border-0 shadow-lg mb-5">
+        <div class="col-lg-12 p-3 p-lg-5">
+          <h3 class="h2 fw-bold mb-4">
+            <i class="fas fa-briefcase me-2 text-primary"></i>Work Experience
+          </h3>
+
+          <div class="mb-4 pb-4 border-bottom">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <div>
+                <h3 class="h5 fw-bold mb-1">Commercial and Operational</h3>
+                <!-- <p class="text-primary mb-0">Tech Innovations Srl, Milan</p> -->
+              </div>
+              <span class="badge bg-primary rounded-pill">1999 - Present</span>
+            </div>
+            <ul class="mt-3">
+              <li class="mb-2">Department Manager and Team Leader</li>
+              <li class="mb-2">Staff Training</li>
+              <li class="mb-2">Order Management and Supplier Relations</li>
+              <li class="mb-2">Market Research and Competitor Analysis</li>
+              <li class="mb-2">Customer Care Specialist and Customer Satisfaction</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="row p-4 pe-lg-0 align-items-start rounded-3 border-0 shadow-lg mb-5">
+        <div class="col-lg-12 p-3 p-lg-5">
+          <h3 class="h2 fw-bold mb-4">
+            <i class="fas fa-graduation-cap me-2 text-primary"></i>Education & Certifications
+          </h3>
+
+          <div class="mb-3 pb-3 border-bottom">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <h3 class="h5 fw-bold mb-1">Master in Full Stack Development</h3>
+                <p class="text-primary mb-0">Start2Impact</p>
+              </div>
+              <span class="badge bg-primary rounded-pill">2025 - Ongoing</span>
+            </div>
+          </div>
+
+          <div class="mb-3 pb-3 border-bottom">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <h3 class="h5 fw-bold mb-1">Python from Zero to Hero</h3>
+                <p class="text-primary mb-0">DataMasters</p>
+              </div>
+              <span class="badge bg-secondary rounded-pill">2025</span>
+            </div>
+          </div>
+
+          <div class="mb-3 pb-3 border-bottom">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <h3 class="h5 fw-bold mb-1">Python Programming - M01 (16 hours)</h3>
+                <p class="text-primary mb-0">Abforma</p>
+              </div>
+              <span class="badge bg-secondary rounded-pill">2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="row p-4 pe-lg-0 align-items-start rounded-3 border-0 shadow-lg mb-5">
+        <div class="col-lg-12 p-3 p-lg-5">
+          <h3 class="h2 fw-bold mb-4">
+            <i class="fas fa-language me-2 text-primary"></i>Languages
+          </h3>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <h3 class="h6 fw-bold">Italian</h3>
+              <p class="mb-0">Native</p>
+            </div>
+            <div class="col-md-4 mb-3">
+              <h3 class="h6 fw-bold">English</h3>
+              <p class="mb-0">Intermediate (B1)</p>
+            </div>
+            <div class="col-md-4 mb-3">
+              <h3 class="h6 fw-bold">French</h3>
+              <p class="mb-0">Intermediate (B1)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Download Button -->
+      <div class="text-center mt-5 mb-5">
+        <a href="/assets/files/CV - Simone Camerano _ Full Stack Developer.pdf"
+          class="btn btn-primary btn-lg px-5 rounded-pill" download>
+          <i class="fas fa-download me-2"></i>Download PDF Version
+        </a>
+      </div>
+    </div>
+    <div class="scroll-top"> <!--right at the end of the body-->
+      <a class="scroll-top__link" href="#top"><i class="fa-solid fa-chevron-up"></i></a>
+      <!--href="#" navigates to the top of the page-->
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="d-flex flex-wrap justify-content-center align-items-center px-3 py-2">
+    <div class="col-md-4 d-flex align-items-center">
+      <span class="copy mx-1">&copy; 2025 Made with Passion by Simone Camerano</span>
+    </div>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="mx-1"><a href="https://github.com/Galdrial" target="_blank" rel="noopener noreferrer"
+          aria-label="Github"><i class="fa-brands fa-github fa-2x"></i></a></li>
+      <li class="mx-1"><a href="https://www.linkedin.com/in/simone-camerano-474363212/" target="_blank"
+          rel="noopener noreferrer" aria-label="Linkedin"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
+      <li class="mx-1"><a href="https://www.facebook.com/SimoneCamerano" target="_blank" rel="noopener noreferrer"
+          aria-label="Facebook"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
+      <li class="mx-1"><a href="https://www.instagram.com/simone_camerano/" target <li class="mx-1"><a
+            href="https://www.linkedin.com/in/simone-camerano-474363212/" target="_blank" rel="noopener noreferrer"
+            aria-label="Linkedin"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
+      <li class="mx-1"><a href="https://www.facebook.com/SimoneCamerano" target="_blank" rel="noopener noreferrer"
+          aria-label="Facebook"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
+      <li class="mx-1"><a href="https://www.instagram.com/simone_camerano/" target="_blank" rel="noopener noreferrer"
+          aria-label="Instagram"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+    </ul>
+  </footer>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/bf2b231be5.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
