@@ -17,23 +17,6 @@ jobs:
           rm -rf docs
           cp -r src docs
 
-      - name: Fix absolute links in HTML files (href, src, srcset, url)
-        run: |
-          find docs -type f -name '*.html' -exec sed -i "s/href[ ]*=[ ]*['\"]\//href=\1/g" {} +
-          find docs -type f -name '*.html' -exec sed -i "s/src[ ]*=[ ]*['\"]\//src=\1/g" {} +
-          find docs -type f -name '*.html' -exec sed -i "s/srcset[ ]*=[ ]*['\"]\//srcset=\1/g" {} +
-          find docs -type f -name '*.html' -exec sed -i "s/url(\//url(/g" {} +
-          find docs -type f -name '*.html' -exec sed -i "s/href[ ]*=[ ]*'\//href='/g" {} +
-          find docs -type f -name '*.html' -exec sed -i "s/src[ ]*=[ ]*'\//src='/g" {} +
-          find docs -type f -name '*.html' -exec sed -i "s/srcset[ ]*=[ ]*'\//srcset='/g" {} +
-          find docs -type f -name '*.html' -exec sed -i "s/srcset=\"\//srcset=\"/g" {} +
-          find docs -type f -name '*.html' -exec sed -i "s/, \/assets/, assets/g" {} +
-
-      - name: Rimuovi lo slash iniziale da tutti i percorsi assoluti
-        run: |
-          find docs -type f -name '*.html' -exec sed -i 's/=\(["'\'']\)\//=\1/g' {} +
-          find docs -type f -name '*.html' -exec sed -i 's/url(\//url(/g' {} +
-
       - name: Inietta il tag base nei file HTML di docs
         run: |
           find docs -type f -name '*.html' -exec sed -i '/<head>/a <base href="https://galdrial.github.io/simonecamerano-dev/docs/">' {} +
