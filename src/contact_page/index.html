@@ -135,7 +135,8 @@
             <h3 class="card-title pb-3">
               <i class="fas fa-paper-plane me-2 text-primary"></i>Scrivimi un Messaggio
             </h4>
-            <form id="contact-form">
+            <form id="contact-form" action="https://formsubmit.co/camerano.simo@gmail.com" method="POST">
+              <input type="hidden" name="_next" value="https://simonecamerano.dev">
               <div class="mb-3">
                 <label for="name" class="form-label">Il tuo nome</label>
                 <input type="text" class="form-control" id="name" name="name" placeholder="John Doe" required>
@@ -325,29 +326,7 @@
 
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/bf2b231be5.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script type="text/javascript">
-    ( function () {
-      // https://dashboard.emailjs.com/admin/account
-      emailjs.init( {
-        publicKey: "mXIOitWHB2IIASFgX",
-      } );
-    } )();
-  </script>
-  <script type="text/javascript">
-    window.onload = function () {
-      document.getElementById( 'contact-form' ).addEventListener( 'submit', function ( event ) {
-        event.preventDefault();
-        // these IDs from the previous steps
-        emailjs.sendForm( 'service_44q339o', 'template_pi10m0p', this )
-          .then( () => {
-            console.log( 'SUCCESS!' );
-          }, ( error ) => {
-            console.log( 'FAILED...', error );
-          } );
-      } );
-    }
-  </script>
+  <!-- EmailJS scripts rimossi per usare Formspree -->
 </body>
 
 </html>
