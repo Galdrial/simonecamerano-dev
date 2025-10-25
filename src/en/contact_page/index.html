@@ -292,6 +292,7 @@
 
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/bf2b231be5.js" crossorigin="anonymous"></script>
+
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script type="text/javascript">
     ( function () {
@@ -303,13 +304,13 @@
   </script>
   <script type="text/javascript">
     window.onload = function () {
-      document.getElementById( 'contact-form' ).addEventListener( 'submit', function ( event ) {
+      var form = document.getElementById( 'contact-form' );
+      form.addEventListener( 'submit', function ( event ) {
         event.preventDefault();
-        // these IDs from the previous steps
-        emailjs.sendForm( 'service_44q339o', 'template_pi10m0p', this )
-          .then( () => {
+        emailjs.sendForm( 'service_44q339o', 'template_pi10m0p', form )
+          .then( function () {
             console.log( 'SUCCESS!' );
-          }, ( error ) => {
+          }, function ( error ) {
             console.log( 'FAILED...', error );
           } );
       } );
