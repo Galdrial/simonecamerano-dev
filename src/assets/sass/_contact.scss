@@ -1,3 +1,10 @@
+// CONTACT PAGE: custom styles for contact page and privacy section
+
+// ==========================================
+// CONTACT PAGE STYLES
+// Stili personalizzati per la pagina di contatto
+// ==========================================
+
 // Mobile first: default rules for mobile
 main {
   flex-direction: column !important;
@@ -5,30 +12,31 @@ main {
   gap: 0.5rem;
 }
 
+// Contact image: hidden on mobile
 img.contact-img {
   display: none !important;
 }
 
+// Desktop: show contact image
 @media (min-width: 992px) {
   img.contact-img {
     display: block !important;
   }
 }  
 
-/* Style to hide the section by default */
+// Privacy section: hidden by default
 .sezione-informativa {
     max-height: 0; 
-  overflow: hidden; /* Hides the content */
+    overflow: hidden; // Hides content
     opacity: 0;
-    transition: all 0.5s ease-in-out, opacity 0.5s ease-in-out; 
-  /* Optional transition effect */
+    transition: all 0.5s ease-in-out, opacity 0.5s ease-in-out; // Transition effect
     padding: 0 10px;
     margin-top: 10px;
 }
 
-/* Style to show the section when the ID is reached from the link */
+// Privacy section: show when active
 .sezione-informativa:target {
-  max-height: 500vh; /* A large value to contain all the text */
+  max-height: 500vh; // Large value to contain all text
     overflow: auto;
     opacity: 1;
     padding: 15px 0px;

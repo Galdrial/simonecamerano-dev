@@ -12373,20 +12373,17 @@ img.contact-img {
     display: block !important;
   }
 }
-/* Style to hide the section by default */
 .sezione-informativa {
   max-height: 0;
-  overflow: hidden; /* Hides the content */
+  overflow: hidden;
   opacity: 0;
   transition: all 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  /* Optional transition effect */
   padding: 0 10px;
   margin-top: 10px;
 }
 
-/* Style to show the section when the ID is reached from the link */
 .sezione-informativa:target {
-  max-height: 500vh; /* A large value to contain all the text */
+  max-height: 500vh;
   overflow: auto;
   opacity: 1;
   padding: 15px 0px;

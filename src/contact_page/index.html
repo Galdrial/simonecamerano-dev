@@ -1,9 +1,10 @@
-<!-- 
+<!--
   ==========================================
   PORTFOLIO PERSONALE - Contact
   ==========================================
   Progetto Start2Impact
   Tecnologie: HTML5, SCSS/Bootstrap 5, CSS-only interactions
+  Questo file gestisce la pagina di contatto, con form EmailJS e info privacy.
 -->
 <!DOCTYPE html>
 <html lang="it">
@@ -25,7 +26,7 @@
   <link rel="alternate" href="https://simonecamerano.dev/en/contact_page/" hreflang="en" />
   <link rel="alternate" href="https://simonecamerano.dev/contact_page/" hreflang="x-default" />
 
-  <!-- Stylesheet compilato (include Bootstrap customizzato + stili custom) -->
+  <!-- Stylesheet principale: Bootstrap customizzato + stili custom -->
   <link rel="stylesheet" href="/assets/css/style.css">
 
   <!-- Google Fonts: Montserrat, Roboto, Google Sans Code -->
@@ -42,15 +43,16 @@
 
 <body>
   <div id="top"></div>
-  <!-- 
+  <!--
     ==========================================
     HEADER - Navigation (Sticky)
     ==========================================
+    Menu di navigazione principale, con gestione mobile CSS-only.
   -->
   <header class="sticky-top">
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container px-3">
-        <!-- Brand Logo -->
+  <!-- Brand Logo: logo personale -->
         <a class="navbar-brand" href="/index.html">
           <span class="m-0" style="font-size:1.25rem; font-weight:700; line-height:1.2; display:inline-block;">
             <span class="text-primary fw-bold">SIMONE</span><span class="fw-bold">CAMERANO</span><span id="dev"
@@ -58,16 +60,14 @@
           </span>
         </a>
 
-        <!-- 
-          MENU MOBILE - Soluzione CSS-only (senza JavaScript)
-        -->
+        <!-- MENU MOBILE: soluzione CSS-only, nessun JS -->
         <input type="checkbox" id="check" autocomplete="off">
 
         <label for="check" class="navbar-toggler" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </label>
 
-        <!-- Navigation Menu -->
+  <!-- Navigation Menu: link alle pagine principali -->
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -98,13 +98,14 @@
     </nav>
   </header>
 
-  <!-- 
+  <!--
     ==========================================
     MAIN CONTENT
     ==========================================
+    Sezione principale: hero, form di contatto, info privacy, info contatto.
   -->
   <main>
-    <!-- Hero Section -->
+  <!-- Hero Section: titolo e presentazione -->
     <div class="container my-5">
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border-0 shadow-lg">
         <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
@@ -129,9 +130,9 @@
       </div>
     </div>
 
-    <!-- Form and Contact Info -->
+  <!-- Form and Contact Info: form EmailJS + info contatto -->
     <div class="container row mx-auto">
-      <!-- Contact Form -->
+  <!-- Contact Form: form di invio email tramite EmailJS -->
       <div class="col-lg-7 mb-5">
         <div class="card mw-100 bg-transparent border-0">
           <div class="card-body">
@@ -160,7 +161,7 @@
                   <textarea class="form-control" id="message" rows="5" name="message"
                     placeholder="Parlami del tuo progetto..." required></textarea>
                 </div>
-                <!-- Privacy Policy -->
+                <!-- Privacy Policy: informativa privacy e consenso -->
                 <p>
                   Compilando e inviando questo modulo, dichiari di aver letto l'informativa sul trattamento dei dati.
                   <br>
@@ -266,7 +267,7 @@
         </div>
       </div>
 
-      <!-- Contact Info -->
+  <!-- Contact Info: informazioni di contatto e tempi di risposta -->
       <div class="col-lg-5 mb-5">
         <div class="card mw-100 bg-transparent border-0">
           <div class="card-body">
@@ -294,15 +295,17 @@
         </div>
       </div>
     </div>
-    <div class="scroll-top"> <!--right at the end of the body-->
+  <!-- Scroll-top: pulsante per tornare in alto -->
+  <div class="scroll-top"> <!--right at the end of the body-->
       <a class="scroll-top__link" href="#top"><i class="fa-solid fa-chevron-up"></i></a>
-      <!--href="#" navigates to the top of the page-->
+  <!-- href="#top" naviga all'inizio della pagina -->
     </div>
   </main>
-  <!-- 
+  <!--
     ==========================================
     FOOTER
     ==========================================
+    Footer con copyright e link social.
   -->
 
   <footer class="d-flex flex-wrap justify-content-center align-items-center  px-3 py-2">
@@ -337,27 +340,31 @@
   </footer>
 
 
-  <!-- Font Awesome Icons -->
+  <!-- Font Awesome Icons: icone social -->
   <script src="https://kit.fontawesome.com/bf2b231be5.js" crossorigin="anonymous"></script>
 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- JS EmailJS: inizializzazione e invio form -->
   <script type="text/javascript">
     ( function () {
-      // https://dashboard.emailjs.com/admin/account
+      // Inizializza EmailJS con la publicKey
       emailjs.init( {
         publicKey: "mXIOitWHB2IIASFgX",
       } );
     } )();
   </script>
   <script type="text/javascript">
+    // Gestione invio form di contatto tramite EmailJS
     window.onload = function () {
       var form = document.getElementById( 'contact-form' );
       form.addEventListener( 'submit', function ( event ) {
         event.preventDefault();
         emailjs.sendForm( 'service_44q339o', 'template_pi10m0p', form )
           .then( function () {
+            // Success: qui puoi mostrare una notifica all'utente
             console.log( 'SUCCESS!' );
           }, function ( error ) {
+            // Error: qui puoi mostrare un messaggio di errore
             console.log( 'FAILED...', error );
           } );
       } );

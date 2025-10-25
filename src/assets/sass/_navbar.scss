@@ -1,3 +1,5 @@
+// NAVBAR: custom styles for navigation bar and brand logo
+// Desktop navigation
 @media (min-width: 992px) {
   .nav-link:not([href*="cv_page"]) {
     width: 100px;
@@ -17,6 +19,7 @@
   }
 }
 
+// Main navbar
 .navbar {
   height: 3rem;
   padding: 0;
@@ -28,6 +31,7 @@
   color: color-contrast(#eeeeee);
 }
 
+// Brand logo and hover
 .navbar-brand {
   padding: 0;
   color: color-contrast(#eeeeee);
@@ -45,6 +49,7 @@
   }
 }
 
+// Toggler menu mobile
 .navbar-toggler {
   border: none !important;
   padding: 0 !important;
@@ -57,6 +62,7 @@
   }
 }
 
+// Icona toggler menu mobile
 .navbar-toggler-icon {
   cursor: pointer;
   color: $body-bg;

@@ -1,9 +1,10 @@
-<!-- 
+<!--
   ==========================================
   PORTFOLIO PERSONALE - Homepage
   ==========================================
   Progetto Start2Impact
   Tecnologie: HTML5, SCSS/Bootstrap 5, CSS-only interactions
+  Questo file gestisce la homepage del portfolio, con presentazione, link alle pagine principali e layout responsive.
 -->
 <!DOCTYPE html>
 <html lang="it">
@@ -26,7 +27,7 @@
   <link rel="alternate" href="https://simonecamerano.dev/index.html" hreflang="x-default" />
 
 
-  <!-- Stylesheet compilato (include Bootstrap customizzato + stili custom) -->
+  <!-- Stylesheet principale: Bootstrap customizzato + stili custom -->
   <link rel="stylesheet" href="/assets/css/style.css">
 
   <!-- Google Fonts: Montserrat, Roboto, Google Sans Code -->
@@ -42,31 +43,31 @@
 </head>
 
 <body>
-  <!-- 
+  <!--
     ==========================================
-    HEADER - Navigation (Sticky)
+    HEADER - Navigation (Sticky): main navigation bar and mobile menu
     ==========================================
+    Menu di navigazione principale, con gestione mobile CSS-only.
+    Contiene il logo e i link alle pagine principali.
   -->
   <header class="sticky-top">
     <nav class="navbar navbar-expand-lg bg-light" role="navigation">
       <div class="container px-3">
-        <!-- Brand Logo -->
+  <!-- Brand Logo: logo personale -->
         <a class="navbar-brand" href="/index.html">
           <span class="m-0" style="font-size:1.25rem; font-weight:700; line-height:1.2; display:inline-block;">
             <span class="text-primary fw-bold">SIMONE</span><span class="fw-bold">CAMERANO</span><span id="dev"
               class="text-primary fw-semibold">.dev</span>
           </span>
         </a>
-        <!-- 
-          MENU MOBILE - Soluzione CSS-only (senza JavaScript)
-        -->
+        <!-- MENU MOBILE: soluzione CSS-only, nessun JS. Permette la navigazione su dispositivi mobili. -->
         <input type="checkbox" id="check" autocomplete="off">
 
         <label for="check" class="navbar-toggler" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </label>
 
-        <!-- Navigation Menu -->
+  <!-- Navigation Menu: link alle pagine principali e cambio lingua -->
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -97,13 +98,15 @@
     </nav>
   </header>
 
-  <!-- 
+  <!--
     ==========================================
-    MAIN CONTENT
+    MAIN CONTENT: hero, about, projects, cv, contact, scroll-to-top
     ==========================================
+    Sezione principale: presentazione, immagine profilo, link rapidi alle pagine chiave.
+    Layout responsive con Bootstrap.
   -->
   <main class="hero-main">
-    <div class="container my-5">
+  <div class="container my-5"> <!-- Hero principale -->
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border-0 shadow-lg">
   <div class="col-lg-7 p-3 p-lg-5 pt-lg-3 order-2 order-lg-1">
           <p class="lead">
@@ -129,22 +132,25 @@
         </div>
   <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg order-1 order-lg-2">
           <picture>
-              <source media="(max-width: 600px)"
-                srcset="/assets/img/simo-mobile-700px.jpg" />
-              <img class="rounded-3" src="/assets/img/simo-standard-650px.jpg"
-                srcset="/assets/img/simo-standard-650px.jpg 1x, /assets/img/simo-retina-1300px.jpg 2x"
-                alt="Simone Camerano" fetchpriority="high" style="width: 100%; height: 100%; object-fit: cover; object-position: right;" />
-            </picture>
+            <!-- Immagine profilo responsive -->
+            <source media="(max-width: 600px)"
+              srcset="/assets/img/simo-mobile-700px.jpg" />
+            <img class="rounded-3" src="/assets/img/simo-standard-650px.jpg"
+              srcset="/assets/img/simo-standard-650px.jpg 1x, /assets/img/simo-retina-1300px.jpg 2x"
+              alt="Simone Camerano" fetchpriority="high" style="width: 100%; height: 100%; object-fit: cover; object-position: right;" />
+          </picture>
         </div>
       </div>
     </div>
 
   </main>
 
-  <!-- 
+  <!--
     ==========================================
-    FOOTER
+    FOOTER: copyright and social links
     ==========================================
+    Footer con copyright e link social.
+    Layout responsive e accessibile.
   -->
 
   <footer class="d-flex flex-wrap justify-content-center align-items-center  px-3 py-2">
@@ -179,7 +185,7 @@
   </footer>
 
 
-  <!-- Font Awesome Icons -->
+  <!-- Font Awesome Icons: icone social -->
   <script src="https://kit.fontawesome.com/bf2b231be5.js" crossorigin="anonymous"></script>
 </body>
 

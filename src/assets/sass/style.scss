@@ -1,26 +1,28 @@
-@import "buttons-active";
+// MAIN STYLESHEET: imports all custom and Bootstrap styles
 // ==========================================
 // MAIN STYLESHEET - MOBILE FIRST
 // Personal Portfolio - Start2Impact Project
+// This file imports all custom and Bootstrap styles.
 // ==========================================
+@import "buttons-active";
 
 // ==========================================
 // 1. FOUNDATION - Variables & Bootstrap
 // ==========================================
-// Import custom variables (override Bootstrap defaults)
+// Importa variabili custom e Bootstrap
 @import "bootstrap-custom";
-
-// Import Bootstrap framework
 @import "../bootstrap-scss/bootstrap";
 
 // ==========================================
 // 2. BASE - Layout & General Styles
 // ==========================================
+// Stili base e layout generali
 @import "config";
 
 // ==========================================
 // 3. COMPONENTS - UI Elements
 // ==========================================
+// Componenti UI: navbar, footer, contact, cv
 @import "navbar";
 @import "footer";
 @import "contact";
@@ -29,9 +31,11 @@
 // ==========================================
 // 4. UTILITIES - Helper Classes
 // ==========================================
+// Utility helpers
 @import "utilities";
 
 // ==========================================
 // 5. THEMES - Color Schemes
 // ==========================================
+// Tema dark mode
 @import "dark-mode";

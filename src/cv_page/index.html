@@ -38,11 +38,12 @@
 
 <body>
   <div id="top"></div>
-  <!-- HEADER - Navigation -->
+
+  <!-- HEADER - Navigation (Sticky): main navigation bar and mobile menu -->
   <header class="sticky-top">
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container px-3">
-        <!-- Brand Logo -->
+        <!-- Brand Logo: nome e dominio -->
         <a class="navbar-brand" href="/index.html">
           <span class="m-0" style="font-size:1.25rem; font-weight:700; line-height:1.2; display:inline-block;">
             <span class="text-primary fw-bold">SIMONE</span><span class="fw-bold">CAMERANO</span><span
@@ -50,36 +51,41 @@
           </span>
         </a>
 
-        <!-- 
-          MENU MOBILE - Soluzione CSS-only (senza JavaScript)
-        -->
+        <!-- Menu mobile: soluzione CSS-only senza JavaScript -->
         <input type="checkbox" id="check" autocomplete="off">
 
+        <!-- Pulsante toggler per dispositivi mobili -->
         <label for="check" class="navbar-toggler" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </label>
 
-        <!-- Navigation Menu -->
+        <!-- Menu di navigazione principale -->
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
+            <!-- Link alla Home -->
             <li class="nav-item">
               <a class="nav-link fw-medium fs-6" aria-current="page" href="/index.html"
                 aria-label="Vai alla Home">Home</a>
             </li>
+            <!-- Link alla pagina Chi sono -->
             <li class="nav-item">
               <a class="nav-link fw-medium fs-6" href="/about_page/" aria-label="Vai alla pagina Chi sono">Chi sono</a>
             </li>
+            <!-- Link alla pagina Progetti -->
             <li class="nav-item">
               <a class="nav-link fw-medium fs-6" href="/projects_page/"
                 aria-label="Vai alla pagina Progetti">Progetti</a>
             </li>
+            <!-- Link alla pagina CV (attiva) -->
             <li class="nav-item">
               <a class="nav-link fw-medium fs-6 active" href="/cv_page/" aria-label="Vai alla pagina CV">CV</a>
             </li>
+            <!-- Link alla pagina Contatti -->
             <li class="nav-item">
               <a class="nav-link fw-medium fs-6" href="/contact_page/"
                 aria-label="Vai alla pagina Contatti">Contatti</a>
             </li>
+            <!-- Link per cambiare lingua (versione inglese) -->
             <li class="nav-item">
               <a class="nav-link fw-medium fs-6 text-decoration-none icon-lang" href="/en/cv_page/"
                 aria-label="Passa alla versione Inglese"><i class="fa-solid fa-earth-europe"></i> EN</a>
@@ -93,7 +99,7 @@
   <main>
     <div class="container my-5">
 
-      <!-- CV Header with Photo -->
+      <!-- Intestazione CV con foto e presentazione -->
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border-0 shadow-lg mb-5">
         <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
           <h1 class="display-4 fw-bold lh-1 pb-3">Simone Camerano</h1>
@@ -105,6 +111,7 @@
             affrontate.
           </p>
         </div>
+        <!-- Immagine profilo CV -->
         <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
           <picture>
               <source media="(max-width: 600px)"
@@ -116,7 +123,7 @@
         </div>
       </div>
 
-      <!-- Professional Summary -->
+      <!-- Sezione profilo professionale -->
       <div class="row p-4 pe-lg-0 align-items-center rounded-3 border-0 shadow-lg mb-5">
         <div class="col-lg-12 p-3 p-lg-5">
           <h3 class="h2 fw-bold mb-4">
@@ -134,13 +141,14 @@
         </div>
       </div>
 
-      <!-- Technical Skills -->
+      <!-- Sezione competenze tecniche e trasversali -->
       <div class="row p-4 pe-lg-0 align-items-start rounded-3 shadow-lg mb-5">
         <div class="col-lg-12 p-3 p-lg-5">
           <h3 class="h2 fw-bold mb-4">
             <i class="fas fa-code me-2 text-primary"></i>Competenze Tecniche
           </h3>
           <div class="row g-4">
+            <!-- Competenze Frontend -->
             <div class="col-md-6">
               <h3 class="h5 fw-bold text-primary mb-3">Sviluppo Frontend</h3>
               <ul class="list-unstyled">
@@ -152,6 +160,7 @@
                 <li class="mb-2"><i class="fa-solid fa-circle text-warning"></i> React, Work in Progress</li>
               </ul>
             </div>
+            <!-- Competenze Backend -->
             <div class="col-md-6">
               <h3 class="h5 fw-bold text-primary mb-3">Sviluppo Backend</h3>
               <ul class="list-unstyled">
@@ -162,6 +171,7 @@
                   <li class="mb-2"><i class="fa-solid fa-circle text-warning"></i> Node.js, Work in Progress</li>
               </ul>
             </div>
+            <!-- Strumenti e workflow -->
             <div class="col-md-6">
               <h3 class="h5 fw-bold text-primary mb-3">Strumenti & Workflow</h3>
               <ul class="list-unstyled">
@@ -169,6 +179,7 @@
                 <li class="mb-2"><i class="fa-solid fa-circle text-success"></i> VS Code</li>
               </ul>
             </div>
+            <!-- Competenze trasversali -->
             <div class="col-md-6">
               <h3 class="h5 fw-bold text-primary mb-3">Competenze Trasversali</h3>
               <ul class="list-unstyled">
@@ -182,7 +193,7 @@
         </div>
       </div>
 
-      <!-- Work Experience -->
+      <!-- Sezione esperienza lavorativa -->
       <div class="row p-4 pe-lg-0 align-items-start rounded-3 border-0 shadow-lg mb-5">
         <div class="col-lg-12 p-3 p-lg-5">
           <h3 class="h2 fw-bold mb-4">
@@ -193,7 +204,7 @@
             <div class="d-flex justify-content-between align-items-start mb-2">
               <div>
                 <h3 class="h5 fw-bold mb-1">Operativo & Commerciale nella GDO</h3>
-               <!--  <p class="text-primary mb-0">Tech Innovations Srl, Milan</p> -->
+                <!-- Esperienza lavorativa principale -->
               </div>
               <span class="badge bg-primary rounded-pill">1999 - Present</span>
             </div>
@@ -208,13 +219,14 @@
           </div>
         </div>
       </div>
-      <!-- Education -->
+      <!-- Sezione istruzione e certificazioni -->
       <div class="row p-4 pe-lg-0 align-items-start rounded-3 border-0 shadow-lg mb-5">
         <div class="col-lg-12 p-3 p-lg-5">
           <h3 class="h2 fw-bold mb-4">
             <i class="fas fa-graduation-cap me-2 text-primary"></i>Istruzione & Certificazioni
           </h3>
 
+          <!-- Master Full Stack -->
           <div class="mb-3 pb-3 border-bottom">
             <div class="d-flex justify-content-between align-items-start">
               <div>
@@ -225,6 +237,7 @@
             </div>
           </div>
 
+          <!-- Certificazioni Python -->
           <div class="mb-3 pb-3 border-bottom">
             <div class="d-flex justify-content-between align-items-start">
               <div>
@@ -247,21 +260,24 @@
         </div>
       </div>
 
-      <!-- Languages -->
+      <!-- Sezione lingue conosciute -->
       <div class="row p-4 pe-lg-0 align-items-start rounded-3 border-0 shadow-lg mb-5">
         <div class="col-lg-12 p-3 p-lg-5">
           <h3 class="h2 fw-bold mb-4">
             <i class="fas fa-language me-2 text-primary"></i>Lingue
           </h3>
           <div class="row">
+            <!-- Italiano -->
             <div class="col-md-4 mb-3">
               <h3 class="h6 fw-bold">Italiano</h3>
               <p class="mb-0">Nativo</p>
             </div>
+            <!-- Inglese -->
             <div class="col-md-4 mb-3">
               <h3 class="h6 fw-bold">Inglese</h3>
               <p class="mb-0">Intermedio (B1)</p>
             </div>
+            <!-- Francese -->
             <div class="col-md-4 mb-3">
               <h3 class="h6 fw-bold">Francese</h3>
               <p class="mb-0">Intermedio (B1)</p>
@@ -270,7 +286,7 @@
         </div>
       </div>
 
-      <!-- Download Button -->
+      <!-- Pulsante per scaricare il CV in PDF -->
       <div class="text-center mt-5 mb-5">
         <a href="/assets/files/CV - Simone Camerano _ Full Stack Developer.pdf"
           class="btn btn-primary btn-lg px-5 rounded-pill" download>
@@ -278,16 +294,18 @@
         </a>
       </div>
     </div>
+    <!-- Pulsante per tornare in alto -->
     <div class="scroll-top"> <!--right at the end of the body-->
       <a class="scroll-top__link" href="#top"><i class="fa-solid fa-chevron-up"></i></a> <!--href="#" navigates to the top of the page-->
     </div>
   </main>
 
-  <!-- FOOTER -->
+  <!-- FOOTER: copyright and social links -->
   <footer class="d-flex flex-wrap justify-content-center align-items-center px-3 py-2">
     <div class="col-md-4 d-flex align-items-center">
       <span class="copy mx-1">&copy; 2025 Made with Passion by Simone Camerano</span>
     </div>
+    <!-- Link ai social network -->
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
       <li class="mx-1"><a href="https://github.com/Galdrial" target="_blank" rel="noopener noreferrer"
           aria-label="Github"><i class="fa-brands fa-github fa-2x"></i></a></li>
@@ -295,7 +313,7 @@
           rel="noopener noreferrer" aria-label="Linkedin"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
       <li class="mx-1"><a href="https://www.facebook.com/SimoneCamerano" target="_blank" rel="noopener noreferrer"
           aria-label="Facebook"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
-      <li class="mx-1"><a href="https://www.instagram.com/simone_camerano/" target="_blank" rel="noopener noreferrer"
+      <li class="mx-1"><a href="https://www.instagram.com/simone_camerano/" target
           aria-label="Instagram"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
     </ul>
   </footer>

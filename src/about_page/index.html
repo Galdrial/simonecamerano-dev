@@ -1,9 +1,10 @@
-<!-- 
+<!--
   ==========================================
   PORTFOLIO PERSONALE - About
   ==========================================
   Progetto Start2Impact
   Tecnologie: HTML5, SCSS/Bootstrap 5, CSS-only interactions
+  Questo file gestisce la pagina "Chi sono" con presentazione, skills, valori e hobby.
 -->
   
 <!DOCTYPE html>
@@ -24,7 +25,7 @@
   <link rel="alternate" href="https://simonecamerano.dev/en/about_page/" hreflang="en" />
   <link rel="alternate" href="https://simonecamerano.dev/about_page/" hreflang="x-default" />
 
-  <!-- Stylesheet compilato (include Bootstrap customizzato + stili custom) -->
+  <!-- Stylesheet principale: Bootstrap customizzato + stili custom -->
   <link rel="stylesheet" href="/assets/css/style.css">
 
   <!-- Google Fonts: Montserrat, Roboto, Google Sans Code -->
@@ -41,31 +42,31 @@
 
 <body>
 <div id="top"></div>
-  <!-- 
+  <!--
     ==========================================
-    HEADER - Navigation (Sticky)
+    HEADER - Navigation (Sticky): main navigation bar and mobile menu
     ==========================================
+    Menu di navigazione principale, con gestione mobile CSS-only.
+    Contiene il logo e i link alle pagine principali.
   -->
   <header class="sticky-top">
     <nav class="navbar navbar-expand-lg bg-light" role="navigation">
       <div class="container px-3">
-        <!-- Brand Logo -->
+  <!-- Brand Logo: logo personale -->
         <a class="navbar-brand" href="/index.html">
           <span class="m-0" style="font-size:1.25rem; font-weight:700; line-height:1.2; display:inline-block;">
             <span class="text-primary fw-bold">SIMONE</span><span class="fw-bold">CAMERANO</span><span
               id="dev" class="text-primary fw-semibold">.dev</span>
           </span>
         </a>
-        <!-- 
-          MENU MOBILE - Soluzione CSS-only (senza JavaScript)
-        -->
+        <!-- MENU MOBILE: soluzione CSS-only, nessun JS. Permette la navigazione su dispositivi mobili. -->
         <input type="checkbox" id="check" autocomplete="off">
 
         <label for="check" class="navbar-toggler" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </label>
 
-        <!-- Navigation Menu -->
+  <!-- Navigation Menu: link alle pagine principali e cambio lingua -->
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -97,13 +98,15 @@
       </div>
     </nav>
   </header>
-  <!-- 
+  <!--
     ==========================================
-    MAIN CONTENT
+    MAIN CONTENT: hero, story, skills, values, interests, scroll-to-top
     ==========================================
+    Sezione principale: presentazione, skills, valori, hobby.
+    Layout responsive con Bootstrap.
   -->
   <main>
-    <div class="container my-5">
+  <div class="container my-5"> <!-- Hero principale -->
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border-0 shadow-lg">
         <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
           <h1 class="display-4 fw-bold lh-1 pb-5">
@@ -116,6 +119,7 @@
         </div>
         <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
             <picture>
+              <!-- Immagine profilo responsive -->
               <source media="(max-width: 600px)"
                 srcset="/assets/img/chi-sono-mobile-700px.jpg" />
               <img class="rounded-3" src="/assets/img/chi-sono-standard-650px.jpg"
@@ -126,7 +130,7 @@
       </div>
     </div>
 
-    <div class="container row">
+  <div class="container row"> <!-- Sezioni skills, valori, hobby -->
       <div class="col-lg-6 mb-5">
         <div class="card mw-100 bg-transparent border-0">
           <div class="card-body">
@@ -277,14 +281,17 @@
         </div>
       </div>
     </div>
-    <div class="scroll-top"> <!--right at the end of the body-->
-      <a class="scroll-top__link" href="#top"><i class="fa-solid fa-chevron-up"></i></a> <!--href="#" navigates to the top of the page-->
+  <!-- Scroll-top: pulsante per tornare in alto -->
+  <div class="scroll-top"> <!--right at the end of the body-->
+  <a class="scroll-top__link" href="#top"><i class="fa-solid fa-chevron-up"></i></a> <!-- href="#top" naviga all'inizio della pagina -->
     </div>
   </main>
-  <!-- 
+  <!--
     ==========================================
-    FOOTER
+    FOOTER: copyright and social links
     ==========================================
+    Footer con copyright e link social.
+    Layout responsive e accessibile.
   -->
   <footer class="d-flex flex-wrap justify-content-center align-items-center  px-3 py-2">
     <div class="col-md-4 d-flex align-items-center">
@@ -317,7 +324,7 @@
     </ul>
   </footer>
 
-  <!-- Font Awesome Icons -->
+  <!-- Font Awesome Icons: icone social -->
   <script src="https://kit.fontawesome.com/bf2b231be5.js" crossorigin="anonymous"></script>
 </body>
 

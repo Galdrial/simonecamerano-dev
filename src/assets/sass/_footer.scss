@@ -1,3 +1,9 @@
+// FOOTER: custom styles for footer and social icons
+// ==========================================
+// FOOTER STYLES
+// Stili personalizzati per il footer
+// ==========================================
+
 footer {
   align-items: center;
   background-color: rgba($color: #eeeeee, $alpha: 0.85);
@@ -5,29 +11,34 @@ footer {
 
 
   flex-wrap: nowrap !important;
-  gap: 1rem; // Spazio tra copyright e icone
+  gap: 1rem; // Space between copyright and icons
   
-  // Previene che il testo vada a capo
+  // Prevents text wrapping
+  // Copyright
   span {
     white-space: nowrap;
-    flex-shrink: 0; // Non si comprime
-    color: $body-color !important; // Copy con colore dinamico
+    flex-shrink: 0; // No compression
+    color: $body-color !important; // Dynamic color for copyright
   }
   
-  // Previene wrapping delle icone social
+  // Prevents wrapping of social icons
+  // Social icons
   ul {
     flex-wrap: nowrap !important;
-    flex-shrink: 0; // Non si comprime
+    flex-shrink: 0; // No compression
     
-    li {
+  // Single social icon
+  li {
       padding: 0rem 0.3rem !important;
       
-      a {
-        color: $primary !important; // Icone sempre primary
+  // Social link
+  a {
+        color: $primary !important; // Icons always primary
         text-decoration: none;
         
-        // Icone Font Awesome - sempre primary
-        i, i::before {
+        // Font Awesome icons - always primary
+  // Font Awesome icons
+  i, i::before {
           color: $primary !important;
         }
       }
@@ -35,21 +46,24 @@ footer {
   }
 }
 
-// Mobile first: regole di default per mobile
+// Mobile first: default rules for mobile
 footer {
   flex-direction: column-reverse !important;
   flex-wrap: wrap !important;
   gap: 0rem;
+  // Copyright mobile
   span {
-    white-space: normal; // Permette wrapping del testo
+    white-space: normal; // Allows text wrapping
     text-align: center;
     padding-top: 0.4rem;
   }
+  // Mobile social icons
   ul {
     padding-top: 0.3rem;
     flex-wrap: wrap !important; // Permette wrapping icone se necessario
     justify-content: center !important;
-    li {
+  // Singola icona social mobile
+  li {
       padding:0rem 0.5rem 0.2rem 0.5rem !important;
     }
   }

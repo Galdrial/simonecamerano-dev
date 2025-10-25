@@ -42,7 +42,7 @@
   <div id="top"></div>
   <!-- 
     ==========================================
-    HEADER - Navigation (Sticky)
+    HEADER - Navigation (Sticky): main navigation bar and mobile menu
     ==========================================
   -->
   <header class="sticky-top">
@@ -58,31 +58,39 @@
 
         <!-- MENU MOBILE - Soluzione CSS-only (senza JavaScript) -->
         <input type="checkbox" id="check" autocomplete="off">
+
+        <!-- Pulsante toggler per la navbar su dispositivi mobili -->
         <label for="check" class="navbar-toggler" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </label>
 
-        <!-- Navigation Menu -->
+        <!-- Menu di navigazione principale -->
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
+            <!-- Link alla Home -->
             <li class="nav-item">
               <a class="nav-link fw-medium fs-6" aria-current="page" href="/index.html"
                 aria-label="Vai alla Home">Home</a>
             </li>
+            <!-- Link alla pagina Chi sono -->
             <li class="nav-item">
               <a class="nav-link fw-medium fs-6" href="/about_page/" aria-label="Vai alla pagina Chi sono">Chi sono</a>
             </li>
+            <!-- Link alla pagina Progetti (attiva) -->
             <li class="nav-item">
               <a class="nav-link fw-medium fs-6 active" href="/projects_page/"
                 aria-label="Vai alla pagina Progetti">Progetti</a>
             </li>
+            <!-- Link alla pagina CV -->
             <li class="nav-item">
               <a class="nav-link fw-medium fs-6" href="/cv_page/" aria-label="Vai alla pagina CV">CV</a>
             </li>
+            <!-- Link alla pagina Contatti -->
             <li class="nav-item">
               <a class="nav-link fw-medium fs-6" href="/contact_page/"
                 aria-label="Vai alla pagina Contatti">Contatti</a>
             </li>
+            <!-- Link per cambiare lingua (versione inglese) -->
             <li class="nav-item">
               <a class="nav-link fw-medium fs-6 text-decoration-none icon-lang" href="/en/projects_page/"
                 aria-label="Passa alla versione Inglese"><i class="fa-solid fa-earth-europe"></i> EN</a>
@@ -93,13 +101,16 @@
     </nav>
   </header>
 
+
   <!-- 
     ==========================================
-    MAIN CONTENT
+    MAIN CONTENT: hero, featured project, scroll-to-top
     ==========================================
+    Sezione principale della pagina con presentazione dei progetti
   -->
   <main>
 
+    <!-- Hero con titolo e descrizione dei progetti -->
     <div class="container my-5">
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border-0 shadow-lg">
         <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
@@ -111,6 +122,7 @@
             Qui trovi le mie idee trasformate in codice: soluzioni concrete, esperimenti creativi e piccoli passi verso
             una crescita continua.
           </p>
+          <!-- Pulsanti per profili esterni -->
           <div class="d-grid gap-3 d-md-flex justify-content-md-start mt-4">
             <a href="https://account.start2impact.it/profile/simone-camerano"
               class="btn btn-primary btn-lg px-4 rounded-pill fw-bold" target="_blank" rel="noopener noreferrer"
@@ -119,6 +131,7 @@
               class="btn btn-primary btn-lg px-4 rounded-pill fw-bold" aria-label="Profilo Github">Il mio Github</a>
           </div>
         </div>
+        <!-- Immagine illustrativa dei progetti -->
         <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
           <picture>
               <source media="(max-width: 600px)"
@@ -131,6 +144,7 @@
       </div>
     </div>
 
+    <!-- Card progetto in evidenza -->
     <div class="container my-5">
       <div class="row align-items-center mb-5 gx-5">
         <div class="col-12">
@@ -138,8 +152,9 @@
             <div class="row align-items-center g-0">
               <div class="col-lg-8 col-12">
                 <div class="card-body">
+                  <!-- Titolo e descrizione progetto in evidenza -->
                   <h3 class="card-title pb-3"><i class="fas fa-project-diagram me-2 text-primary"></i>Progetto in
-                    evidenza</h4>
+                    evidenza</h3>
                     <h5 class="fw-bold">Hotel Pomelia</h5>
                     <p class="card-text">
                       Landing page per un hotel ipotetico situato a Ragusa, Sicilia. Progetto realizzato con HTML5 e
@@ -147,6 +162,7 @@
                     </p>
                 </div>
               </div>
+              <!-- Immagine progetto in evidenza -->
               <div class="col-lg-4 col-12 d-flex justify-content-center p-3 p-lg-0">
                 <a href="https://galdrial.github.io/Progetto-Intro-Sviluppo-di-Simone-Camerano/" target="_blank"
                   rel="noopener noreferrer" aria-label="Apri l'immagine Hotel Pomelia in una nuova scheda">
@@ -160,22 +176,26 @@
         </div>
       </div>
     </div>
+    <!-- Pulsante per tornare in alto -->
     <div class="scroll-top"> <!--right at the end of the body-->
       <a class="scroll-top__link" href="#top"><i class="fa-solid fa-chevron-up"></i></a>
       <!--href="#" navigates to the top of the page-->
     </div>
   </main>
 
+
   <!-- 
     ==========================================
-    FOOTER
+    FOOTER: copyright and social links
     ==========================================
+    Sezione footer con copyright e link social
   -->
 
   <footer class="d-flex flex-wrap justify-content-center align-items-center  px-3 py-2">
     <div class="col-md-4 d-flex align-items-center">
       <span class="copy mx-1">&copy; 2025 Made with Passion by Simone Camerano</span>
     </div>
+    <!-- Link ai social network -->
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
       <li class="mx-1">
         <a href="https://github.com/Galdrial" target="_blank" rel="noopener noreferrer" aria-label="Github">
@@ -195,7 +215,7 @@
         </a>
       </li>
       <li class="mx-1">
-        <a href="https://www.instagram.com/simone_camerano/" target="_blank" rel="noopener noreferrer"
+        <a href="https://www.instagram
           aria-label="Instagram">
           <i class="fa-brands fa-instagram fa-2x"></i>
         </a>
