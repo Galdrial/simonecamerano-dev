@@ -29,6 +29,9 @@
   <!-- Stylesheet principale: Bootstrap customizzato + stili custom -->
   <link rel="stylesheet" href="/assets/css/style.css">
 
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.min.css">
+
   <!-- Google Fonts: Montserrat, Roboto, Google Sans Code -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +41,7 @@
 
   <!-- Favicon -->
   <link rel="icon" href="/assets/img/favicon-16x16.png" type="image/png">
-
+  <script src="/assets/js/button.js" defer></script>
 </head>
 
 <body>
@@ -258,10 +261,14 @@
                   <button type="reset" class="btn btn-secondary btn-lg px-4 rounded-pill fw-bold">
                     <i class="fa-solid fa-rotate-left me-2"></i>Resetta
                   </button>
-                  <button type="submit" value="Send" class="btn btn-primary btn-lg px-4 rounded-pill fw-bold">
+                  <button type="submit" value="Send" class="btn btn-primary btn-lg px-4 rounded-pill fw-bold" id="button-submit">
                     Invia <i class="fa-solid fa-paper-plane ms-2"></i>
                   </button>
                 </div>
+                <div id="success-alert" class="alert alert-success border-0 mt-4 d-none" role="alert">
+                <i class="fas fa-check-circle me-2"></i>
+                <strong>Successo!</strong> Il tuo messaggio è stato inviato correttamente. Ti risponderò al più presto.
+              </div>
               </form>
           </div>
         </div>
@@ -273,9 +280,7 @@
           <div class="card-body">
             <h3 class="card-title pb-3">
               <i class="fas fa-address-card me-2 text-primary"></i>Informazioni di Contatto
-              </h4>
-
-
+              </h3>
 
 
               <div class="mb-4">
@@ -356,21 +361,32 @@
   <script type="text/javascript">
     // Gestione invio form di contatto tramite EmailJS
     window.onload = function () {
-      var form = document.getElementById( 'contact-form' );
-      form.addEventListener( 'submit', function ( event ) {
+      var form = document.getElementById('contact-form');
+      var alertBox = document.getElementById('success-alert');
+      form.addEventListener('submit', function (event) {
         event.preventDefault();
-        emailjs.sendForm( 'service_44q339o', 'template_pi10m0p', form )
-          .then( function () {
-            // Success: qui puoi mostrare una notifica all'utente
-            console.log( 'SUCCESS!' );
-          }, function ( error ) {
+        emailjs.sendForm('service_44q339o', 'template_pi10m0p', form)
+          .then(function () {
+            // Success: mostra alert
+            alertBox.classList.remove('d-none');
+            alertBox.classList.add('show');
+            setTimeout(function () {
+              alertBox.classList.remove('show');
+              alertBox.classList.add('d-none');
+            }, 5000);
+            form.reset();
+          }, function (error) {
             // Error: qui puoi mostrare un messaggio di errore
-            console.log( 'FAILED...', error );
-          } );
-      } );
+            console.log('FAILED...', error);
+          });
+      });
     }
   </script>
 
+
+
+  <!-- Bootstrap JS Bundle (necessario per i modal) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

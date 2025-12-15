@@ -219,6 +219,10 @@
                   Send <i class="fa-solid fa-paper-plane ms-2"></i>
                 </button>
               </div>
+              <div id="success-alert" class="alert alert-success border-0 mt-4 d-none" role="alert">
+                <i class="fas fa-check-circle me-2"></i>
+                <strong>Success!</strong> Your message has been sent successfully! I will get back to you as soon as possible.
+              </div>
             </form>
           </div>
         </div>
@@ -230,7 +234,7 @@
           <div class="card-body">
             <h3 class="card-title pb-3">
               <i class="fas fa-address-card me-2 text-primary"></i>Contact Info
-            </h4>
+            </h3>
             <div class="mb-4">
               <h5 class="h6 fw-bold mb-3">Response Time</h5>
               <p class="mb-0">
@@ -304,16 +308,25 @@
   </script>
   <script type="text/javascript">
     window.onload = function () {
-      var form = document.getElementById( 'contact-form' );
-      form.addEventListener( 'submit', function ( event ) {
+      var form = document.getElementById('contact-form');
+      var alertBox = document.getElementById('success-alert');
+      form.addEventListener('submit', function (event) {
         event.preventDefault();
-        emailjs.sendForm( 'service_44q339o', 'template_pi10m0p', form )
-          .then( function () {
-            console.log( 'SUCCESS!' );
-          }, function ( error ) {
-            console.log( 'FAILED...', error );
-          } );
-      } );
+        emailjs.sendForm('service_44q339o', 'template_pi10m0p', form)
+          .then(function () {
+            // Success: show alert
+            alertBox.classList.remove('d-none');
+            alertBox.classList.add('show');
+            setTimeout(function () {
+              alertBox.classList.remove('show');
+              alertBox.classList.add('d-none');
+            }, 5000);
+            form.reset();
+          }, function (error) {
+            // Error: you can show an error alert here
+            console.log('FAILED...', error);
+          });
+      });
     }
   </script>
 </body>
